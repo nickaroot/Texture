@@ -1,2 +1,2 @@
-github "nickaroot/PINRemoteImage" "xcframework"
-github "nickaroot/PINCache" "xcframework"
+github "pinterest/PINRemoteImage" "3.0.1"
+github "pinterest/PINCache" "3.0.1"
