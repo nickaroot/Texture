@@ -1,2 +1,2 @@
-github "nickaroot/PINRemoteImage" "master"
-github "nickaroot/PINCache" "master"
+github "nickaroot/PINRemoteImage" "xcframework"
+github "nickaroot/PINCache" "xcframework"
