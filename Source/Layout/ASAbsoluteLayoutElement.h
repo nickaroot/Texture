@@ -7,6 +7,7 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#import <UIKit/UIKit.h>
 #import "ASBaseDefines.h"
 
 NS_ASSUME_NONNULL_BEGIN
