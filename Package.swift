@@ -49,14 +49,14 @@ let package = Package(
             name: "AsyncDisplayKit",
             type: .dynamic,
             targets: ["AsyncDisplayKit"]),
-        .library(
-            name: "AsyncDisplayKitIGListKit",
-            type: .dynamic,
-            targets: ["AsyncDisplayKitIGListKit"]),
+//        .library(
+//            name: "AsyncDisplayKitIGListKit",
+//            type: .dynamic,
+//            targets: ["AsyncDisplayKitIGListKit"]),
     ],
     dependencies: [
         .package(url: "https://github.com/pinterest/PINRemoteImage.git", .branch("master")),
-        .package(url: "https://github.com/Instagram/IGListKit", .branch("master")),
+//        .package(url: "https://github.com/Instagram/IGListKit", .branch("master")),
     ],
     targets: [
         .target(
@@ -65,12 +65,12 @@ let package = Package(
             path: "spm/Sources/AsyncDisplayKit",
             cSettings: headersSearchPath + sharedDefines + IGListKit(enabled: false)
         ),
-        .target(
-            name: "AsyncDisplayKitIGListKit",
-            dependencies: ["IGListKit", "PINRemoteImage"],
-            path: "spm/Sources/AsyncDisplayKitIGListKit/AsyncDisplayKit",
-            cSettings: headersSearchPath + sharedDefines + IGListKit(enabled: true)
-        ),
+//        .target(
+//            name: "AsyncDisplayKitIGListKit",
+//            dependencies: ["IGListKit", "PINRemoteImage"],
+//            path: "spm/Sources/AsyncDisplayKitIGListKit/AsyncDisplayKit",
+//            cSettings: headersSearchPath + sharedDefines + IGListKit(enabled: true)
+//        ),
     ],
     cLanguageStandard: .c11,
     cxxLanguageStandard: .cxx11
