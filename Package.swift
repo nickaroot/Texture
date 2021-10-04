@@ -47,11 +47,11 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AsyncDisplayKit",
-            type: .dynamic,
+            type: .static,
             targets: ["AsyncDisplayKit"]),
 //        .library(
 //            name: "AsyncDisplayKitIGListKit",
-//            type: .dynamic,
+//            type: .static,
 //            targets: ["AsyncDisplayKitIGListKit"]),
     ],
     dependencies: [
