@@ -85,7 +85,10 @@
 #endif
 
 //#define AS_PIN_REMOTE_IMAGE __has_include(<PINRemoteImage/PINRemoteImage.h>)
-define AS_PIN_REMOTE_IMAGE 1
+#ifndef AS_PIN_REMOTE_IMAGE
+  #define AS_PIN_REMOTE_IMAGE 1
+#endif
+  
 #define AS_IG_LIST_KIT __has_include(<IGListKit/IGListKit.h>)
 #define AS_IG_LIST_DIFF_KIT __has_include(<IGListDiffKit/IGListDiffKit.h>)
 
