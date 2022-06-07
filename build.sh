@@ -51,7 +51,8 @@ function build_example {
         cd $example
 
         echo "git \"file://${local_repo}\" \"${current_branch}\"" > "Cartfile"
-        carthage update --platform iOS
+        # carthage update --platform iOS
+	    carthage update --platform iOS --use-xcframeworks --new-resolver
 
         set -o pipefail && xcodebuild \
             -project "Sample.xcodeproj" \
@@ -247,7 +248,8 @@ cocoapods-lint-other-subspecs)
 carthage|all)
     echo "Verifying carthage works."
 
-    set -o pipefail && carthage update && carthage build --no-skip-current
+    # set -o pipefail && carthage update && carthage build --no-skip-current
+	set -o pipefail && carthage update --use-xcframeworks --new-resolver && carthage build --use-xcframeworks --no-skip-current
     success="1"
     ;;
 
