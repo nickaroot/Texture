@@ -19,7 +19,7 @@ let headersSearchPath: [CSetting] = [.headerSearchPath("."),
 
 let sharedDefines: [CSetting] = [
                                 // Disable "old" textnode by default for SPM
-                                .define("AS_ENABLE_TEXTNODE", to: "0"),
+                                .define("AS_ENABLE_TEXTNODE", to: "1"),
     
                                 // PINRemoteImage always available for Texture
                                 .define("AS_PIN_REMOTE_IMAGE", to: "1"),
