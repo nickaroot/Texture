@@ -20,14 +20,15 @@ let headersSearchPath: [CSetting] = [
 ]
 
 let sharedDefines: [CSetting] = [
-    // Disable "old" textnode by default for SPM
-    .define("AS_ENABLE_TEXTNODE", to: "1"),
-    
-    // PINRemoteImage always available for Texture
-    .define("AS_PIN_REMOTE_IMAGE", to: "1"),
-    
-    // always disabled
-    .define("IG_LIST_COLLECTION_VIEW", to: "0"),]
+            // Disable "old" textnode by default for SPM
+            .define("AS_ENABLE_TEXTNODE", to: "1"),
+        
+        // PINRemoteImage always available for Texture
+        .define("AS_PIN_REMOTE_IMAGE", to: "1"),
+        
+        // always disabled
+        .define("IG_LIST_COLLECTION_VIEW", to: "0"),
+    ]
 
 func IGListKit(enabled: Bool, diffOnly: Bool) -> [CSetting] {
     [
