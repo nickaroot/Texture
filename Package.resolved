@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "IGListKit",
+        "repositoryURL": "https://github.com/Instagram/IGListKit.git",
+        "state": {
+          "branch": "main",
+          "revision": "501cccc6f03247b48d080dd010487e4614135792",
+          "version": null
+        }
+      },
+      {
         "package": "libwebp",
         "repositoryURL": "https://github.com/SDWebImage/libwebp-Xcode",
         "state": {
@@ -24,8 +33,8 @@
         "repositoryURL": "https://github.com/pinterest/PINOperation.git",
         "state": {
           "branch": null,
-          "revision": "44d8ca154a4e75a028a5548c31ff3a53b90cef15",
-          "version": "1.2.1"
+          "revision": "40504c156a68b20f98f7ddc73a115cbb7893be25",
+          "version": "1.2.2"
         }
       },
       {
