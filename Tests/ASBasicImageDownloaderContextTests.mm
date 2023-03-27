@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBasicImageDownloader.h"
-#else
-#import <AsyncDisplayKit/ASBasicImageDownloader.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBasicImageDownloaderInternal.h"
 #else
+#import <AsyncDisplayKit/ASBasicImageDownloader.h>
 #import <AsyncDisplayKit/ASBasicImageDownloaderInternal.h>
 #endif
 

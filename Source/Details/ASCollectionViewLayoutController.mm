@@ -9,23 +9,15 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionViewLayoutController.h"
-#else
-#import <AsyncDisplayKit/ASCollectionViewLayoutController.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
-#else
-#import <AsyncDisplayKit/ASAssert.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionView+Undeprecated.h"
-#else
-#import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASElementMap.h"
 #else
+#import <AsyncDisplayKit/ASCollectionViewLayoutController.h>
+
+#import <AsyncDisplayKit/ASAssert.h>
+#import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
 #import <AsyncDisplayKit/ASElementMap.h>
 #endif
 

@@ -8,28 +8,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASMainThreadDeallocation.h"
-#else
-#import <AsyncDisplayKit/ASMainThreadDeallocation.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
-#else
-#import <AsyncDisplayKit/ASInternalHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLog.h"
-#else
-#import <AsyncDisplayKit/ASLog.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASMainThreadDeallocation.h>
+
+#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASLog.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

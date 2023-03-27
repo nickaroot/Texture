@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionElement.h"
-#else
-#import <AsyncDisplayKit/ASCollectionElement.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCellNode+Internal.h"
-#else
-#import <AsyncDisplayKit/ASCellNode+Internal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASCollectionElement.h>
+#import <AsyncDisplayKit/ASCellNode+Internal.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

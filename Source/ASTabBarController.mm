@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTabBarController.h"
-#else
-#import <AsyncDisplayKit/ASTabBarController.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLog.h"
 #else
+#import <AsyncDisplayKit/ASTabBarController.h>
 #import <AsyncDisplayKit/ASLog.h>
 #endif
 

@@ -8,14 +8,12 @@
 //
 
 #import "ASThrashUtility.h"
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTableViewInternal.h"
-#else
-#import <AsyncDisplayKit/ASTableViewInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTableView+Undeprecated.h"
 #else
+#import <AsyncDisplayKit/ASTableViewInternal.h>
 #import <AsyncDisplayKit/ASTableView+Undeprecated.h>
 #endif
 

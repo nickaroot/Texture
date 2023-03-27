@@ -18,32 +18,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollections.h"
-#else
-#import <AsyncDisplayKit/ASCollections.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutElementStylePrivate.h"
-#else
-#import <AsyncDisplayKit/ASLayoutElementStylePrivate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutSpecUtilities.h"
-#else
-#import <AsyncDisplayKit/ASLayoutSpecUtilities.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLog.h"
-#else
-#import <AsyncDisplayKit/ASLog.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASStackPositionedLayout.h"
 #else
+#import <AsyncDisplayKit/ASCollections.h>
+#import <AsyncDisplayKit/ASLayout.h>
+#import <AsyncDisplayKit/ASLayoutElementStylePrivate.h>
+#import <AsyncDisplayKit/ASLayoutSpecUtilities.h>
+#import <AsyncDisplayKit/ASLog.h>
 #import <AsyncDisplayKit/ASStackPositionedLayout.h>
 #endif
 

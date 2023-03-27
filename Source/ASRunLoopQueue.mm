@@ -9,34 +9,20 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
-#else
-#import <AsyncDisplayKit/ASAvailability.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfigurationInternal.h"
-#else
-#import <AsyncDisplayKit/ASConfigurationInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLog.h"
-#else
-#import <AsyncDisplayKit/ASLog.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASRunLoopQueue.h"
-#else
-#import <AsyncDisplayKit/ASRunLoopQueue.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
-#else
-#import <AsyncDisplayKit/ASThread.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASSignpost.h"
 #else
+#import <AsyncDisplayKit/ASAvailability.h>
+#import <AsyncDisplayKit/ASConfigurationInternal.h>
+#import <AsyncDisplayKit/ASLog.h>
+#import <AsyncDisplayKit/ASRunLoopQueue.h>
+#import <AsyncDisplayKit/ASThread.h>
 #import <AsyncDisplayKit/ASSignpost.h>
 #endif
+
 #import <vector>
 
 #define ASRunLoopQueueLoggingEnabled 0

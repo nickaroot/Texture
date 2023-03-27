@@ -9,14 +9,12 @@
 
 #pragma once
 #import <Foundation/Foundation.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDimension.h"
-#else
-#import <AsyncDisplayKit/ASDimension.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutElement.h"
 #else
+#import <AsyncDisplayKit/ASDimension.h>
 #import <AsyncDisplayKit/ASLayoutElement.h>
 #endif
 

@@ -8,12 +8,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
-#else
-#import <AsyncDisplayKit/ASAssert.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
 #else
+#import <AsyncDisplayKit/ASAssert.h>
 #import <AsyncDisplayKit/ASAvailability.h>
 #endif
 

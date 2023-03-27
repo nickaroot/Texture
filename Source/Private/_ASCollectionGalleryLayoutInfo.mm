@@ -8,12 +8,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "_ASCollectionGalleryLayoutInfo.h"
-#else
-#import <AsyncDisplayKit/_ASCollectionGalleryLayoutInfo.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASHashing.h"
 #else
+#import <AsyncDisplayKit/_ASCollectionGalleryLayoutInfo.h>
 #import <AsyncDisplayKit/ASHashing.h>
 #endif
 

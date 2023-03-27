@@ -11,12 +11,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASResponderChainEnumerator.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
 #import <AsyncDisplayKit/ASResponderChainEnumerator.h>
 #endif
 

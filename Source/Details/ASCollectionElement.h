@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDataController.h"
-#else
-#import <AsyncDisplayKit/ASDataController.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTraitCollection.h"
 #else
+#import <AsyncDisplayKit/ASDataController.h>
 #import <AsyncDisplayKit/ASTraitCollection.h>
 #endif
 

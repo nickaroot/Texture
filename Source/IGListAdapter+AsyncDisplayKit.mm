@@ -17,12 +17,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "IGListAdapter+AsyncDisplayKit.h"
-#else
-#import <AsyncDisplayKit/IGListAdapter+AsyncDisplayKit.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASIGListAdapterBasedDataSource.h"
 #else
+#import <AsyncDisplayKit/IGListAdapter+AsyncDisplayKit.h>
 #import <AsyncDisplayKit/ASIGListAdapterBasedDataSource.h>
 #endif
 

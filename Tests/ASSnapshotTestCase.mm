@@ -8,24 +8,16 @@
 //
 
 #import "ASSnapshotTestCase.h"
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
-#else
-#import <AsyncDisplayKit/ASAvailability.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Beta.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+Beta.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Subclasses.h"
 #else
+#import <AsyncDisplayKit/ASAvailability.h>
+#import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
 #endif
 

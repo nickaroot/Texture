@@ -9,22 +9,13 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
-#else
-#import <AsyncDisplayKit/ASAssert.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollections.h"
-#else
-#import <AsyncDisplayKit/ASCollections.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
-#else
-#import <AsyncDisplayKit/ASInternalHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTwoDimensionalArrayUtils.h"
 #else
+#import <AsyncDisplayKit/ASAssert.h>
+#import <AsyncDisplayKit/ASCollections.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
 #import <AsyncDisplayKit/ASTwoDimensionalArrayUtils.h>
 #endif
 

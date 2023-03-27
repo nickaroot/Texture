@@ -18,17 +18,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
-#else
-#import <AsyncDisplayKit/ASInternalHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutSpecUtilities.h"
-#else
-#import <AsyncDisplayKit/ASLayoutSpecUtilities.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutSpec+Subclasses.h"
 #else
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASLayoutSpecUtilities.h>
 #import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
 #endif
 

@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASSection.h"
-#else
-#import <AsyncDisplayKit/ASSection.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASSectionContext.h"
 #else
+#import <AsyncDisplayKit/ASSection.h>
 #import <AsyncDisplayKit/ASSectionContext.h>
 #endif
 

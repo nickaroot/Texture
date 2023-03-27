@@ -11,12 +11,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBackgroundLayoutSpec.h"
-#else
-#import <AsyncDisplayKit/ASBackgroundLayoutSpec.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInsetLayoutSpec.h"
 #else
+#import <AsyncDisplayKit/ASBackgroundLayoutSpec.h>
 #import <AsyncDisplayKit/ASInsetLayoutSpec.h>
 #endif
 

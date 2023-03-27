@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAbstractLayoutController.h"
-#else
-#import <AsyncDisplayKit/ASAbstractLayoutController.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAbstractLayoutController+FrameworkPrivate.h"
-#else
-#import <AsyncDisplayKit/ASAbstractLayoutController+FrameworkPrivate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
 #else
+#import <AsyncDisplayKit/ASAbstractLayoutController.h>
+#import <AsyncDisplayKit/ASAbstractLayoutController+FrameworkPrivate.h>
 #import <AsyncDisplayKit/ASAssert.h>
 #endif
 

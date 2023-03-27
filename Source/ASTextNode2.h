@@ -8,17 +8,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASControlNode.h"
-#else
-#import <AsyncDisplayKit/ASControlNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Beta.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+Beta.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNodeCommon.h"
 #else
+#import <AsyncDisplayKit/ASControlNode.h>
+#import <AsyncDisplayKit/ASDisplayNode+Beta.h>
 #import <AsyncDisplayKit/ASTextNodeCommon.h>
 #endif
 

@@ -17,17 +17,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBasicImageDownloaderInternal.h"
-#else
-#import <AsyncDisplayKit/ASBasicImageDownloaderInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASImageContainerProtocolCategories.h"
-#else
-#import <AsyncDisplayKit/ASImageContainerProtocolCategories.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASBasicImageDownloaderInternal.h>
+#import <AsyncDisplayKit/ASImageContainerProtocolCategories.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

@@ -11,17 +11,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASStackLayoutSpecUtilities.h"
-#else
-#import <AsyncDisplayKit/ASStackLayoutSpecUtilities.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASStackLayoutSpec.h"
 #else
+#import <AsyncDisplayKit/ASLayout.h>
+#import <AsyncDisplayKit/ASStackLayoutSpecUtilities.h>
 #import <AsyncDisplayKit/ASStackLayoutSpec.h>
 #endif
 

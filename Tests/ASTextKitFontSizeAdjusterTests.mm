@@ -11,6 +11,7 @@
 #else
 #import <AsyncDisplayKit/ASTextKitFontSizeAdjuster.h>
 #endif
+
 #import <XCTest/XCTest.h>
 
 #if AS_ENABLE_TEXTNODE

@@ -8,16 +8,15 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit.h"
-#else
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "NSIndexSet+ASHelpers.h"
 #else
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import <AsyncDisplayKit/NSIndexSet+ASHelpers.h>
 #endif
+
 #import "OCMockObject+ASAdditions.h"
 #import "ASTestCase.h"
 

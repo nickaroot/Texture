@@ -8,14 +8,12 @@
 //
 
 #import "ASDisplayNode+Ancestry.h"
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
-#else
-#import <AsyncDisplayKit/ASThread.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
 #else
+#import <AsyncDisplayKit/ASThread.h>
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
 #endif
 

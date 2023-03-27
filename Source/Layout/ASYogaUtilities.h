@@ -16,17 +16,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLog.h"
-#else
-#import <AsyncDisplayKit/ASLog.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Beta.h"
 #else
+#import <AsyncDisplayKit/ASLayout.h>
+#import <AsyncDisplayKit/ASLog.h>
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
 #endif
 

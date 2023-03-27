@@ -9,20 +9,16 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASMainSerialQueue.h"
-#else
-#import <AsyncDisplayKit/ASMainSerialQueue.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
-#else
-#import <AsyncDisplayKit/ASThread.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
 #else
+#import <AsyncDisplayKit/ASMainSerialQueue.h>
+
+#import <AsyncDisplayKit/ASThread.h>
 #import <AsyncDisplayKit/ASInternalHelpers.h>
 #endif
+
 #import <queue>
 
 @interface ASMainSerialQueue ()

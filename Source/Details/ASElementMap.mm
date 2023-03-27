@@ -12,30 +12,20 @@
 #else
 #import <AsyncDisplayKit/ASElementMap.h>
 #endif
+
 #import <UIKit/UIKit.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionElement.h"
-#else
-#import <AsyncDisplayKit/ASCollectionElement.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTwoDimensionalArrayUtils.h"
-#else
-#import <AsyncDisplayKit/ASTwoDimensionalArrayUtils.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASMutableElementMap.h"
-#else
-#import <AsyncDisplayKit/ASMutableElementMap.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASSection.h"
-#else
-#import <AsyncDisplayKit/ASSection.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASObjectDescriptionHelpers.h"
 #else
+#import <AsyncDisplayKit/ASCollectionElement.h>
+#import <AsyncDisplayKit/ASTwoDimensionalArrayUtils.h>
+#import <AsyncDisplayKit/ASMutableElementMap.h>
+#import <AsyncDisplayKit/ASSection.h>
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
 #endif
 

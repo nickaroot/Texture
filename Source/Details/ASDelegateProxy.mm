@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDelegateProxy.h"
-#else
-#import <AsyncDisplayKit/ASDelegateProxy.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTableNode.h"
-#else
-#import <AsyncDisplayKit/ASTableNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionNode.h"
 #else
+#import <AsyncDisplayKit/ASDelegateProxy.h>
+#import <AsyncDisplayKit/ASTableNode.h>
 #import <AsyncDisplayKit/ASCollectionNode.h>
 #endif
 

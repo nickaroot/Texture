@@ -8,7 +8,11 @@
 //
 
 #import "PhotoModel.h"
+#if !__has_include(<IGListKit/IGListKit.h>)
+#import "IGListKit.h"
+#else
 #import <IGListKit/IGListKit.h>
+#endif
 
 typedef NS_ENUM(NSInteger, PhotoFeedModelType) {
   PhotoFeedModelTypePopular,

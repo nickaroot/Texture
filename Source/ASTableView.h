@@ -11,17 +11,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBaseDefines.h"
-#else
-#import <AsyncDisplayKit/ASBaseDefines.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutRangeType.h"
-#else
-#import <AsyncDisplayKit/ASLayoutRangeType.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTableViewProtocols.h"
 #else
+#import <AsyncDisplayKit/ASBaseDefines.h>
+#import <AsyncDisplayKit/ASLayoutRangeType.h>
 #import <AsyncDisplayKit/ASTableViewProtocols.h>
 #endif
 

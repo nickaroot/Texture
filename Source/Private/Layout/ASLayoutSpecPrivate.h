@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
-#else
-#import <AsyncDisplayKit/ASInternalHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASInternalHelpers.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

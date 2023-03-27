@@ -8,19 +8,14 @@
 //
 
 #import "ASDisplayNodeTestsHelper.h"
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASRunLoopQueue.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNode.h>
+#import <AsyncDisplayKit/ASLayout.h>
 #import <AsyncDisplayKit/ASRunLoopQueue.h>
 #endif
 

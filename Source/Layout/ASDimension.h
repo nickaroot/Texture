@@ -9,19 +9,14 @@
 
 #pragma once
 #import <UIKit/UIGeometry.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
-#else
-#import <AsyncDisplayKit/ASAvailability.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBaseDefines.h"
-#else
-#import <AsyncDisplayKit/ASBaseDefines.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
 #else
+#import <AsyncDisplayKit/ASAvailability.h>
+#import <AsyncDisplayKit/ASBaseDefines.h>
 #import <AsyncDisplayKit/ASAssert.h>
 #endif
 

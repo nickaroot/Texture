@@ -13,44 +13,24 @@
 //
 
 #import <atomic>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Beta.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+Beta.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+FrameworkPrivate.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutElement.h"
-#else
-#import <AsyncDisplayKit/ASLayoutElement.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutTransition.h"
-#else
-#import <AsyncDisplayKit/ASLayoutTransition.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
-#else
-#import <AsyncDisplayKit/ASThread.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "_ASTransitionContext.h"
-#else
-#import <AsyncDisplayKit/_ASTransitionContext.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASWeakSet.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNode.h>
+#import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#import <AsyncDisplayKit/ASLayoutElement.h>
+#import <AsyncDisplayKit/ASLayoutTransition.h>
+#import <AsyncDisplayKit/ASThread.h>
+#import <AsyncDisplayKit/_ASTransitionContext.h>
 #import <AsyncDisplayKit/ASWeakSet.h>
 #endif
 

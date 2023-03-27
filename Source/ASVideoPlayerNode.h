@@ -17,19 +17,14 @@
 
 #if TARGET_OS_IOS
 #import <CoreMedia/CoreMedia.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
-#else
-#import <AsyncDisplayKit/ASThread.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASVideoNode.h"
-#else
-#import <AsyncDisplayKit/ASVideoNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Subclasses.h"
 #else
+#import <AsyncDisplayKit/ASThread.h>
+#import <AsyncDisplayKit/ASVideoNode.h>
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
 #endif
 

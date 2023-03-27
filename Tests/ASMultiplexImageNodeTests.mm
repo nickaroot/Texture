@@ -12,17 +12,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASImageProtocols.h"
-#else
-#import <AsyncDisplayKit/ASImageProtocols.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASMultiplexImageNode.h"
-#else
-#import <AsyncDisplayKit/ASMultiplexImageNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASImageContainerProtocolCategories.h"
 #else
+#import <AsyncDisplayKit/ASImageProtocols.h>
+#import <AsyncDisplayKit/ASMultiplexImageNode.h>
 #import <AsyncDisplayKit/ASImageContainerProtocolCategories.h>
 #endif
 

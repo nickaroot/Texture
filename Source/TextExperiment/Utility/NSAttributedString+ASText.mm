@@ -8,24 +8,16 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "NSAttributedString+ASText.h"
-#else
-#import <AsyncDisplayKit/NSAttributedString+ASText.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "NSParagraphStyle+ASText.h"
-#else
-#import <AsyncDisplayKit/NSParagraphStyle+ASText.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextRunDelegate.h"
-#else
-#import <AsyncDisplayKit/ASTextRunDelegate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextUtilities.h"
 #else
+#import <AsyncDisplayKit/NSAttributedString+ASText.h>
+#import <AsyncDisplayKit/NSParagraphStyle+ASText.h>
+#import <AsyncDisplayKit/ASTextRunDelegate.h>
 #import <AsyncDisplayKit/ASTextUtilities.h>
 #endif
+
 #import <CoreFoundation/CoreFoundation.h>
 
 

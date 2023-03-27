@@ -9,22 +9,13 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASPendingStateController.h"
-#else
-#import <AsyncDisplayKit/ASPendingStateController.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
-#else
-#import <AsyncDisplayKit/ASThread.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASWeakSet.h"
-#else
-#import <AsyncDisplayKit/ASWeakSet.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeInternal.h"
 #else
+#import <AsyncDisplayKit/ASPendingStateController.h>
+#import <AsyncDisplayKit/ASThread.h>
+#import <AsyncDisplayKit/ASWeakSet.h>
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
 #endif // Required for -applyPendingViewState; consider moving this to +FrameworkPrivate
 

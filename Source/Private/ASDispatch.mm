@@ -8,12 +8,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDispatch.h"
-#else
-#import <AsyncDisplayKit/ASDispatch.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfigurationInternal.h"
 #else
+#import <AsyncDisplayKit/ASDispatch.h>
 #import <AsyncDisplayKit/ASConfigurationInternal.h>
 #endif
 

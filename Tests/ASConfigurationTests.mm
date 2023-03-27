@@ -10,22 +10,13 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
-#else
-#import <AsyncDisplayKit/ASAvailability.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfiguration.h"
-#else
-#import <AsyncDisplayKit/ASConfiguration.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfigurationDelegate.h"
-#else
-#import <AsyncDisplayKit/ASConfigurationDelegate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfigurationInternal.h"
 #else
+#import <AsyncDisplayKit/ASAvailability.h>
+#import <AsyncDisplayKit/ASConfiguration.h>
+#import <AsyncDisplayKit/ASConfigurationDelegate.h>
 #import <AsyncDisplayKit/ASConfigurationInternal.h>
 #endif
 

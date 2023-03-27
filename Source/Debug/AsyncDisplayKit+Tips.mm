@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit+Tips.h"
-#else
-#import <AsyncDisplayKit/AsyncDisplayKit+Tips.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Ancestry.h"
 #else
+#import <AsyncDisplayKit/AsyncDisplayKit+Tips.h>
 #import <AsyncDisplayKit/ASDisplayNode+Ancestry.h>
 #endif
 

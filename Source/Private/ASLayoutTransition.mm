@@ -9,24 +9,19 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutTransition.h"
-#else
-#import <AsyncDisplayKit/ASLayoutTransition.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "NSArray+Diffing.h"
 #else
+#import <AsyncDisplayKit/ASLayoutTransition.h>
+
 #import <AsyncDisplayKit/NSArray+Diffing.h>
 #endif
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeInternal.h"
 #else
+#import <AsyncDisplayKit/ASLayout.h>
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
 #endif // Required for _removeFromSupernodeIfEqualTo:
 

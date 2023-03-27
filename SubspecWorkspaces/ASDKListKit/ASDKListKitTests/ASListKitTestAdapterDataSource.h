@@ -7,7 +7,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<IGListKit/IGListKit.h>)
+#import "IGListKit.h"
+#else
 #import <IGListKit/IGListKit.h>
+#endif
 
 @interface ASListKitTestAdapterDataSource : NSObject <IGListAdapterDataSource>
 

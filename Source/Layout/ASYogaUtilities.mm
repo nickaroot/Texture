@@ -8,12 +8,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASYogaUtilities.h"
-#else
-#import <AsyncDisplayKit/ASYogaUtilities.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutElementStylePrivate.h"
 #else
+#import <AsyncDisplayKit/ASYogaUtilities.h>
 #import <AsyncDisplayKit/ASLayoutElementStylePrivate.h>
 #endif
 #if YOGA /* YOGA */

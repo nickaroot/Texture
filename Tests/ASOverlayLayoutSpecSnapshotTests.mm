@@ -11,12 +11,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASOverlayLayoutSpec.h"
-#else
-#import <AsyncDisplayKit/ASOverlayLayoutSpec.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCenterLayoutSpec.h"
 #else
+#import <AsyncDisplayKit/ASOverlayLayoutSpec.h>
 #import <AsyncDisplayKit/ASCenterLayoutSpec.h>
 #endif
 

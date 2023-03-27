@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeInternal.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASNodeController+Beta.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
 #import <AsyncDisplayKit/ASNodeController+Beta.h>
 #endif
 

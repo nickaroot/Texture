@@ -15,15 +15,17 @@
 
 #if AS_IG_LIST_KIT
 
+#if !__has_include(<IGListKit/IGListKit.h>)
+#import "IGListKit.h"
+#else
 #import <IGListKit/IGListKit.h>
+#endif
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionView.h"
-#else
-#import <AsyncDisplayKit/ASCollectionView.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionNode.h"
 #else
+#import <AsyncDisplayKit/ASCollectionView.h>
 #import <AsyncDisplayKit/ASCollectionNode.h>
 #endif
 

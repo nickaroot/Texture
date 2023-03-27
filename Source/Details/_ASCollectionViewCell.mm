@@ -9,28 +9,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "_ASCollectionViewCell.h"
-#else
-#import <AsyncDisplayKit/_ASCollectionViewCell.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Subclasses.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCellNode+Internal.h"
-#else
-#import <AsyncDisplayKit/ASCellNode+Internal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionElement.h"
-#else
-#import <AsyncDisplayKit/ASCollectionElement.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
 #else
+#import <AsyncDisplayKit/_ASCollectionViewCell.h>
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+
+#import <AsyncDisplayKit/ASCellNode+Internal.h>
+#import <AsyncDisplayKit/ASCollectionElement.h>
 #import <AsyncDisplayKit/ASInternalHelpers.h>
 #endif
 

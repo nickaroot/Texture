@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDKViewController.h"
-#else
-#import <AsyncDisplayKit/ASDKViewController.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBaseDefines.h"
 #else
+#import <AsyncDisplayKit/ASDKViewController.h>
 #import <AsyncDisplayKit/ASBaseDefines.h>
 #endif
 

@@ -9,27 +9,15 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
-#else
-#import <AsyncDisplayKit/ASAvailability.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASHashing.h"
-#else
-#import <AsyncDisplayKit/ASHashing.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTraitCollection.h"
-#else
-#import <AsyncDisplayKit/ASTraitCollection.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASObjectDescriptionHelpers.h"
-#else
-#import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutElement.h"
 #else
+#import <AsyncDisplayKit/ASAvailability.h>
+#import <AsyncDisplayKit/ASHashing.h>
+#import <AsyncDisplayKit/ASTraitCollection.h>
+#import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
 #import <AsyncDisplayKit/ASLayoutElement.h>
 #endif
 

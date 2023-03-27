@@ -7,7 +7,11 @@
 //
 
 #import "PhotoFeedListKitViewController.h"
+#if !__has_include(<IGListKit/IGListKit.h>)
+#import "IGListKit.h"
+#else
 #import <IGListKit/IGListKit.h>
+#endif
 #import "PhotoFeedModel.h"
 #import "PhotoFeedSectionController.h"
 #import "RefreshingSectionControllerType.h"

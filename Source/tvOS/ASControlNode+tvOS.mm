@@ -11,12 +11,9 @@
 #if TARGET_OS_TV
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASControlNode.h"
-#else
-#import <AsyncDisplayKit/ASControlNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASControlNode+Private.h"
 #else
+#import <AsyncDisplayKit/ASControlNode.h>
 #import <AsyncDisplayKit/ASControlNode+Private.h>
 #endif
 

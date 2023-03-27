@@ -17,17 +17,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitEntityAttribute.h"
-#else
-#import <AsyncDisplayKit/ASTextKitEntityAttribute.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitRenderer+Positioning.h"
-#else
-#import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitTailTruncater.h"
 #else
+#import <AsyncDisplayKit/ASTextKitEntityAttribute.h>
+#import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
 #import <AsyncDisplayKit/ASTextKitTailTruncater.h>
 #endif
 

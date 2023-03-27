@@ -11,12 +11,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutElement.h"
-#else
-#import <AsyncDisplayKit/ASLayoutElement.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASObjectDescriptionHelpers.h"
 #else
+#import <AsyncDisplayKit/ASLayoutElement.h>
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
 #endif
 

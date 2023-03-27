@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASOverlayLayoutSpec.h"
-#else
-#import <AsyncDisplayKit/ASOverlayLayoutSpec.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutSpec+Subclasses.h"
-#else
-#import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollections.h"
 #else
+#import <AsyncDisplayKit/ASOverlayLayoutSpec.h>
+#import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
 #import <AsyncDisplayKit/ASCollections.h>
 #endif
 

@@ -17,12 +17,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutManager.h"
-#else
-#import <AsyncDisplayKit/ASLayoutManager.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASLayoutManager.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

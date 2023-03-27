@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASPagerFlowLayout.h"
-#else
-#import <AsyncDisplayKit/ASPagerFlowLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCellNode.h"
-#else
-#import <AsyncDisplayKit/ASCellNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionView.h"
 #else
+#import <AsyncDisplayKit/ASPagerFlowLayout.h>
+#import <AsyncDisplayKit/ASCellNode.h>
 #import <AsyncDisplayKit/ASCollectionView.h>
 #endif
 

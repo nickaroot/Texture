@@ -11,32 +11,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionViewProtocols.h"
-#else
-#import <AsyncDisplayKit/ASCollectionViewProtocols.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBaseDefines.h"
-#else
-#import <AsyncDisplayKit/ASBaseDefines.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBatchContext.h"
-#else
-#import <AsyncDisplayKit/ASBatchContext.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDimension.h"
-#else
-#import <AsyncDisplayKit/ASDimension.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutRangeType.h"
-#else
-#import <AsyncDisplayKit/ASLayoutRangeType.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASScrollDirection.h"
 #else
+#import <AsyncDisplayKit/ASCollectionViewProtocols.h>
+#import <AsyncDisplayKit/ASBaseDefines.h>
+#import <AsyncDisplayKit/ASBatchContext.h>
+#import <AsyncDisplayKit/ASDimension.h>
+#import <AsyncDisplayKit/ASLayoutRangeType.h>
 #import <AsyncDisplayKit/ASScrollDirection.h>
 #endif
 

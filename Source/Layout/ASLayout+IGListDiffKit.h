@@ -12,7 +12,12 @@
 #else
 #import <AsyncDisplayKit/ASLayout.h>
 #endif
+
+#if !__has_include(<IGListDiffKit/IGListDiffKit.h>)
+#import "IGListDiffKit.h"
+#else
 #import <IGListDiffKit/IGListDiffKit.h>
+#endif
 
 @interface ASLayout(IGListDiffKit) <IGListDiffable>
 @end

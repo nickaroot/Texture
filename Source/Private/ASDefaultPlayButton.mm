@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDefaultPlayButton.h"
-#else
-#import <AsyncDisplayKit/ASDefaultPlayButton.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "_ASDisplayLayer.h"
 #else
+#import <AsyncDisplayKit/ASDefaultPlayButton.h>
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
 #endif
 

@@ -17,27 +17,15 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Subclasses.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASEqualityHelpers.h"
-#else
-#import <AsyncDisplayKit/ASEqualityHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitComponents.h"
-#else
-#import <AsyncDisplayKit/ASTextKitComponents.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNodeWordKerner.h"
-#else
-#import <AsyncDisplayKit/ASTextNodeWordKerner.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#import <AsyncDisplayKit/ASEqualityHelpers.h>
+#import <AsyncDisplayKit/ASTextKitComponents.h>
+#import <AsyncDisplayKit/ASTextNodeWordKerner.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

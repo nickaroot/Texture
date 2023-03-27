@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASImageNode.h"
-#else
-#import <AsyncDisplayKit/ASImageNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASImageProtocols.h"
 #else
+#import <AsyncDisplayKit/ASImageNode.h>
 #import <AsyncDisplayKit/ASImageProtocols.h>
 #endif
 

@@ -11,6 +11,7 @@
 #else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #endif
+
 #import "ASSnapshotTestCase.h"
 
 @interface ASButtonNodeSnapshotTests : ASSnapshotTestCase

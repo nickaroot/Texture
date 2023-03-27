@@ -17,28 +17,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
-#else
-#import <AsyncDisplayKit/ASAssert.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitContext.h"
-#else
-#import <AsyncDisplayKit/ASTextKitContext.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitShadower.h"
-#else
-#import <AsyncDisplayKit/ASTextKitShadower.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitTailTruncater.h"
-#else
-#import <AsyncDisplayKit/ASTextKitTailTruncater.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitFontSizeAdjuster.h"
 #else
+#import <AsyncDisplayKit/ASAssert.h>
+
+#import <AsyncDisplayKit/ASTextKitContext.h>
+#import <AsyncDisplayKit/ASTextKitShadower.h>
+#import <AsyncDisplayKit/ASTextKitTailTruncater.h>
 #import <AsyncDisplayKit/ASTextKitFontSizeAdjuster.h>
 #endif
 

@@ -7,14 +7,12 @@
 //
 
 #import <XCTest/XCTest.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit.h"
-#else
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
 #else
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
 #endif
 

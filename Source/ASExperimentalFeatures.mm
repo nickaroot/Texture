@@ -8,13 +8,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASExperimentalFeatures.h"
-#else
-#import <AsyncDisplayKit/ASExperimentalFeatures.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollections.h"
 #else
+#import <AsyncDisplayKit/ASExperimentalFeatures.h>
+
 #import <AsyncDisplayKit/ASCollections.h>
 #endif
 

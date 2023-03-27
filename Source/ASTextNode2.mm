@@ -8,12 +8,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNode2.h"
-#else
-#import <AsyncDisplayKit/ASTextNode2.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNode.h"
 #else
+#import <AsyncDisplayKit/ASTextNode2.h>
 #import <AsyncDisplayKit/ASTextNode.h>
 #endif  // Definition of ASTextNodeDelegate
 
@@ -22,43 +19,23 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "_ASDisplayLayer.h"
-#else
-#import <AsyncDisplayKit/_ASDisplayLayer.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+FrameworkPrivate.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+Subclasses.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeInternal.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASHighlightOverlayLayer.h"
-#else
-#import <AsyncDisplayKit/ASHighlightOverlayLayer.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitRenderer+Positioning.h"
-#else
-#import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASEqualityHelpers.h"
 #else
+#import <AsyncDisplayKit/_ASDisplayLayer.h>
+#import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#import <AsyncDisplayKit/ASHighlightOverlayLayer.h>
+
+#import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
 #import <AsyncDisplayKit/ASEqualityHelpers.h>
 #endif
 

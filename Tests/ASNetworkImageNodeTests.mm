@@ -8,14 +8,12 @@
 
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit.h"
-#else
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode+FrameworkPrivate.h"
 #else
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
 #endif
 

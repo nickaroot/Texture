@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "_ASCoreAnimationExtras.h"
-#else
-#import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASEqualityHelpers.h"
 #else
+#import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
 #import <AsyncDisplayKit/ASEqualityHelpers.h>
 #endif
 

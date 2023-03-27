@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextInput.h"
-#else
-#import <AsyncDisplayKit/ASTextInput.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextUtilities.h"
 #else
+#import <AsyncDisplayKit/ASTextInput.h>
 #import <AsyncDisplayKit/ASTextUtilities.h>
 #endif
 

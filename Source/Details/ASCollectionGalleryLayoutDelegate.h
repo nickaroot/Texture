@@ -8,12 +8,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCollectionLayoutDelegate.h"
-#else
-#import <AsyncDisplayKit/ASCollectionLayoutDelegate.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASScrollDirection.h"
 #else
+#import <AsyncDisplayKit/ASCollectionLayoutDelegate.h>
 #import <AsyncDisplayKit/ASScrollDirection.h>
 #endif
 

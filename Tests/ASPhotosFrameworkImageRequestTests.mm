@@ -10,6 +10,7 @@
 #if AS_USE_PHOTOS
 
 #import <XCTest/XCTest.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASPhotosFrameworkImageRequest.h"
 #else

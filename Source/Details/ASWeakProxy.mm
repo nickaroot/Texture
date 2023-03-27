@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASWeakProxy.h"
-#else
-#import <AsyncDisplayKit/ASWeakProxy.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASObjectDescriptionHelpers.h"
-#else
-#import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
 #else
+#import <AsyncDisplayKit/ASWeakProxy.h>
+#import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
 #import <AsyncDisplayKit/ASAssert.h>
 #endif
 

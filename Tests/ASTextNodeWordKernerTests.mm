@@ -11,17 +11,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitComponents.h"
-#else
-#import <AsyncDisplayKit/ASTextKitComponents.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNodeTypes.h"
-#else
-#import <AsyncDisplayKit/ASTextNodeTypes.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNodeWordKerner.h"
 #else
+#import <AsyncDisplayKit/ASTextKitComponents.h>
+#import <AsyncDisplayKit/ASTextNodeTypes.h>
 #import <AsyncDisplayKit/ASTextNodeWordKerner.h>
 #endif
 

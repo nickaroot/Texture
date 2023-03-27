@@ -9,28 +9,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
-#else
-#import <AsyncDisplayKit/ASInternalHelpers.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfigurationInternal.h"
-#else
-#import <AsyncDisplayKit/ASConfigurationInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASRunLoopQueue.h"
-#else
-#import <AsyncDisplayKit/ASRunLoopQueue.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASSignpost.h"
-#else
-#import <AsyncDisplayKit/ASSignpost.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASThread.h"
 #else
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+
+#import <AsyncDisplayKit/ASConfigurationInternal.h>
+#import <AsyncDisplayKit/ASRunLoopQueue.h>
+#import <AsyncDisplayKit/ASSignpost.h>
 #import <AsyncDisplayKit/ASThread.h>
 #endif
 

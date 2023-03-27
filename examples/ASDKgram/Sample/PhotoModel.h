@@ -8,7 +8,11 @@
 //
 
 #import "UserModel.h"
+#if !__has_include(<IGListKit/IGListKit.h>)
+#import "IGListKit.h"
+#else
 #import <IGListKit/IGListKit.h>
+#endif
 
 @interface PhotoModel : NSObject <IGListDiffable>
 

@@ -8,17 +8,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASCornerLayoutSpec.h"
-#else
-#import <AsyncDisplayKit/ASCornerLayoutSpec.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutSpec+Subclasses.h"
 #else
+#import <AsyncDisplayKit/ASCornerLayoutSpec.h>
+#import <AsyncDisplayKit/ASLayout.h>
 #import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
 #endif
 

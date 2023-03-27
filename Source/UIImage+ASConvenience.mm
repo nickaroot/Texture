@@ -9,12 +9,9 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "UIImage+ASConvenience.h"
-#else
-#import <AsyncDisplayKit/UIImage+ASConvenience.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASGraphicsContext.h"
 #else
+#import <AsyncDisplayKit/UIImage+ASConvenience.h>
 #import <AsyncDisplayKit/ASGraphicsContext.h>
 #endif
 

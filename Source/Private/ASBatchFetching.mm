@@ -9,17 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBatchFetching.h"
-#else
-#import <AsyncDisplayKit/ASBatchFetching.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBatchContext.h"
-#else
-#import <AsyncDisplayKit/ASBatchContext.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASBatchFetchingDelegate.h"
 #else
+#import <AsyncDisplayKit/ASBatchFetching.h>
+#import <AsyncDisplayKit/ASBatchContext.h>
 #import <AsyncDisplayKit/ASBatchFetchingDelegate.h>
 #endif
 

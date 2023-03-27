@@ -8,14 +8,12 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNode.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASVisibilityProtocols.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNode.h>
 #import <AsyncDisplayKit/ASVisibilityProtocols.h>
 #endif
 

@@ -25,28 +25,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitComponents.h"
-#else
-#import <AsyncDisplayKit/ASTextKitComponents.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitEntityAttribute.h"
-#else
-#import <AsyncDisplayKit/ASTextKitEntityAttribute.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitRenderer.h"
-#else
-#import <AsyncDisplayKit/ASTextKitRenderer.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextKitRenderer+Positioning.h"
-#else
-#import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
 #else
+#import <AsyncDisplayKit/ASTextKitComponents.h>
+#import <AsyncDisplayKit/ASTextKitEntityAttribute.h>
+#import <AsyncDisplayKit/ASTextKitRenderer.h>
+#import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
+
 #import <AsyncDisplayKit/ASInternalHelpers.h>
 #endif
 

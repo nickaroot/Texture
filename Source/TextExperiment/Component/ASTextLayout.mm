@@ -9,38 +9,21 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextLayout.h"
-#else
-#import <AsyncDisplayKit/ASTextLayout.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAssert.h"
-#else
-#import <AsyncDisplayKit/ASAssert.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASConfigurationInternal.h"
-#else
-#import <AsyncDisplayKit/ASConfigurationInternal.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextUtilities.h"
-#else
-#import <AsyncDisplayKit/ASTextUtilities.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextAttribute.h"
-#else
-#import <AsyncDisplayKit/ASTextAttribute.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "NSAttributedString+ASText.h"
-#else
-#import <AsyncDisplayKit/NSAttributedString+ASText.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASInternalHelpers.h"
 #else
+#import <AsyncDisplayKit/ASTextLayout.h>
+
+#import <AsyncDisplayKit/ASAssert.h>
+#import <AsyncDisplayKit/ASConfigurationInternal.h>
+#import <AsyncDisplayKit/ASTextUtilities.h>
+#import <AsyncDisplayKit/ASTextAttribute.h>
+#import <AsyncDisplayKit/NSAttributedString+ASText.h>
 #import <AsyncDisplayKit/ASInternalHelpers.h>
 #endif
 

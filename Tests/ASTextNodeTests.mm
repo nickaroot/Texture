@@ -14,27 +14,15 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASAvailability.h"
-#else
-#import <AsyncDisplayKit/ASAvailability.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayout.h"
-#else
-#import <AsyncDisplayKit/ASLayout.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNode.h"
-#else
-#import <AsyncDisplayKit/ASTextNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTextNode+Beta.h"
-#else
-#import <AsyncDisplayKit/ASTextNode+Beta.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "CoreGraphics+ASConvenience.h"
 #else
+#import <AsyncDisplayKit/ASAvailability.h>
+#import <AsyncDisplayKit/ASLayout.h>
+#import <AsyncDisplayKit/ASTextNode.h>
+#import <AsyncDisplayKit/ASTextNode+Beta.h>
 #import <AsyncDisplayKit/CoreGraphics+ASConvenience.h>
 #endif
 

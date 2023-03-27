@@ -16,11 +16,13 @@
 #if AS_IG_LIST_KIT
 
 #import "ASIGListAdapterBasedDataSource.h"
+
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit.h"
 #else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #endif
+
 #import <objc/runtime.h>
 
 typedef IGListSectionController<ASSectionController> ASIGSectionController;
@@ -359,7 +361,8 @@ typedef struct {
 {
   // Cast to NSObject will be removed after https://github.com/Instagram/IGListKit/pull/435
   if ([(id<NSObject>)updater isKindOfClass:[IGListAdapterUpdater class]]) {
-    [(IGListAdapterUpdater *)updater setAllowsBackgroundReloading:NO];
+      // Removed from IGListKit
+//    [(IGListAdapterUpdater *)updater setAllowsBackgroundReloading:NO];
   } else {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

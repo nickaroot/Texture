@@ -16,22 +16,13 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeTipState.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeTipState.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTipNode.h"
-#else
-#import <AsyncDisplayKit/ASTipNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTip.h"
-#else
-#import <AsyncDisplayKit/ASTip.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit+Tips.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNodeTipState.h>
+#import <AsyncDisplayKit/ASTipNode.h>
+#import <AsyncDisplayKit/ASTip.h>
 #import <AsyncDisplayKit/AsyncDisplayKit+Tips.h>
 #endif
 

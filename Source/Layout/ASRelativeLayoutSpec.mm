@@ -9,13 +9,11 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASRelativeLayoutSpec.h"
-#else
-#import <AsyncDisplayKit/ASRelativeLayoutSpec.h>
-#endif
 
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASLayoutSpec+Subclasses.h"
 #else
+#import <AsyncDisplayKit/ASRelativeLayoutSpec.h>
+
 #import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
 #endif
 

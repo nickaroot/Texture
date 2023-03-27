@@ -17,32 +17,17 @@
 
 #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeTipState.h"
-#else
-#import <AsyncDisplayKit/ASDisplayNodeTipState.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "AsyncDisplayKit+Tips.h"
-#else
-#import <AsyncDisplayKit/AsyncDisplayKit+Tips.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTipNode.h"
-#else
-#import <AsyncDisplayKit/ASTipNode.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTipProvider.h"
-#else
-#import <AsyncDisplayKit/ASTipProvider.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASTipsWindow.h"
-#else
-#import <AsyncDisplayKit/ASTipsWindow.h>
-#endif
-#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
 #import "ASDisplayNodeExtras.h"
 #else
+#import <AsyncDisplayKit/ASDisplayNodeTipState.h>
+#import <AsyncDisplayKit/AsyncDisplayKit+Tips.h>
+#import <AsyncDisplayKit/ASTipNode.h>
+#import <AsyncDisplayKit/ASTipProvider.h>
+#import <AsyncDisplayKit/ASTipsWindow.h>
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
 #endif
 
