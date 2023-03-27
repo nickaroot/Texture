@@ -7,34 +7,146 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBatchFetching.h"
+#else
 #import <AsyncDisplayKit/ASBatchFetching.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDelegateProxy.h"
+#else
 #import <AsyncDisplayKit/ASDelegateProxy.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode+Internal.h"
+#else
 #import <AsyncDisplayKit/ASCellNode+Internal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionElement.h"
+#else
 #import <AsyncDisplayKit/ASCollectionElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionInternal.h"
+#else
 #import <AsyncDisplayKit/ASCollectionInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayout.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASCollectionNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollections.h"
+#else
 #import <AsyncDisplayKit/ASCollections.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionViewLayoutController.h"
+#else
 #import <AsyncDisplayKit/ASCollectionViewLayoutController.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionViewLayoutFacilitatorProtocol.h"
+#else
 #import <AsyncDisplayKit/ASCollectionViewLayoutFacilitatorProtocol.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionViewFlowLayoutInspector.h"
+#else
 #import <AsyncDisplayKit/ASCollectionViewFlowLayoutInspector.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASElementMap.h"
+#else
 #import <AsyncDisplayKit/ASElementMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "UICollectionViewLayout+ASConvenience.h"
+#else
 #import <AsyncDisplayKit/UICollectionViewLayout+ASConvenience.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRangeController.h"
+#else
 #import <AsyncDisplayKit/ASRangeController.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionViewCell.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionViewCell.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayLayer.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionReusableView.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionReusableView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASSectionContext.h"
+#else
 #import <AsyncDisplayKit/ASSectionContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView+Undeprecated.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASHierarchyChangeSet.h"
+#else
 #import <AsyncDisplayKit/_ASHierarchyChangeSet.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "CoreGraphics+ASConvenience.h"
+#else
 #import <AsyncDisplayKit/CoreGraphics+ASConvenience.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
 
 /**
  * A macro to get self.collectionNode and assign it to a local variable, or return

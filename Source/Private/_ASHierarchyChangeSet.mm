@@ -7,13 +7,37 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASHierarchyChangeSet.h"
+#else
 #import <AsyncDisplayKit/_ASHierarchyChangeSet.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollections.h"
+#else
 #import <AsyncDisplayKit/ASCollections.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "NSIndexSet+ASHelpers.h"
+#else
 #import <AsyncDisplayKit/NSIndexSet+ASHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#endif
 #import <unordered_map>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDataController.h"
+#else
 #import <AsyncDisplayKit/ASDataController.h>
+#endif
 
 // If assertions are enabled and they haven't forced us to suppress the exception,
 // then throw, otherwise log.

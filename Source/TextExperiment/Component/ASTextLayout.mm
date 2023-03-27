@@ -7,14 +7,42 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextLayout.h"
+#else
 #import <AsyncDisplayKit/ASTextLayout.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfigurationInternal.h"
+#else
 #import <AsyncDisplayKit/ASConfigurationInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextUtilities.h"
+#else
 #import <AsyncDisplayKit/ASTextUtilities.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextAttribute.h"
+#else
 #import <AsyncDisplayKit/ASTextAttribute.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "NSAttributedString+ASText.h"
+#else
 #import <AsyncDisplayKit/NSAttributedString+ASText.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
 
 const CGSize ASTextContainerMaxSize = (CGSize){0x100000, 0x100000};
 

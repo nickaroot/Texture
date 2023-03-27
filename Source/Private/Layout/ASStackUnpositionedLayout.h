@@ -9,9 +9,21 @@
 
 #import <vector>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpecUtilities.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpecUtilities.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpec.h>
+#endif
 
 /** The threshold that determines if a violation has actually occurred. */
 ASDK_EXTERN CGFloat const kViolationEpsilon;

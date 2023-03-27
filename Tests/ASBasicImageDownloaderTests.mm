@@ -9,7 +9,11 @@
 
 #import <XCTest/XCTest.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBasicImageDownloader.h"
+#else
 #import <AsyncDisplayKit/ASBasicImageDownloader.h>
+#endif
 
 @interface ASBasicImageDownloaderTests : XCTestCase
 

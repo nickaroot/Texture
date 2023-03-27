@@ -7,13 +7,41 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCoreAnimationExtras.h"
+#else
 #import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransaction.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransaction.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayLayer.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASGraphicsContext.h"
+#else
 #import <AsyncDisplayKit/ASGraphicsContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASSignpost.h"
+#else
 #import <AsyncDisplayKit/ASSignpost.h>
+#endif
 
 using AS::MutexLocker;
 

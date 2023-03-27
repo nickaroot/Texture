@@ -7,17 +7,57 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionFlowLayoutDelegate.h"
+#else
 #import <AsyncDisplayKit/ASCollectionFlowLayoutDelegate.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode+Internal.h"
+#else
 #import <AsyncDisplayKit/ASCellNode+Internal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutState.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutState.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionElement.h"
+#else
 #import <AsyncDisplayKit/ASCollectionElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutContext.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutDefines.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollections.h"
+#else
 #import <AsyncDisplayKit/ASCollections.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASElementMap.h"
+#else
 #import <AsyncDisplayKit/ASElementMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpec.h>
+#endif
 
 @implementation ASCollectionFlowLayoutDelegate {
   ASScrollDirection _scrollableDirections;

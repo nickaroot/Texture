@@ -11,9 +11,21 @@
 
 #import <UIKit/UIKit.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageProtocols.h"
+#else
 #import <AsyncDisplayKit/ASImageProtocols.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

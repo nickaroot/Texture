@@ -8,12 +8,36 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDataController.h"
+#else
 #import <AsyncDisplayKit/ASDataController.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAbstractLayoutController.h"
+#else
 #import <AsyncDisplayKit/ASAbstractLayoutController.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutRangeType.h"
+#else
 #import <AsyncDisplayKit/ASLayoutRangeType.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRangeControllerUpdateRangeProtocol+Beta.h"
+#else
 #import <AsyncDisplayKit/ASRangeControllerUpdateRangeProtocol+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
 #define ASRangeControllerLoggingEnabled 0
 

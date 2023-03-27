@@ -7,12 +7,32 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAbsoluteLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASAbsoluteLayoutSpec.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollections.h"
+#else
 #import <AsyncDisplayKit/ASCollections.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpec+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElementStylePrivate.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElementStylePrivate.h>
+#endif
 
 #pragma mark - ASAbsoluteLayoutSpec
 

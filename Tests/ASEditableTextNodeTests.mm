@@ -8,8 +8,16 @@
 //
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASEditableTextNode.h"
+#else
 #import <AsyncDisplayKit/ASEditableTextNode.h>
+#endif
 
 static BOOL CGSizeEqualToSizeWithIn(CGSize size1, CGSize size2, CGFloat delta)
 {

@@ -7,15 +7,51 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASScrollNode.h"
+#else
 #import <AsyncDisplayKit/ASScrollNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayLayer.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Yoga.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Yoga.h>
+#endif
 
 @interface ASScrollView : UIScrollView
 @end

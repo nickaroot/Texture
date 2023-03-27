@@ -7,13 +7,41 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASButtonNode+Private.h"
+#else
 #import <AsyncDisplayKit/ASButtonNode+Private.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASButtonNode+Yoga.h"
+#else
 #import <AsyncDisplayKit/ASButtonNode+Yoga.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBackgroundLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASBackgroundLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInsetLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASInsetLayoutSpec.h>
+#endif
 
 @implementation ASButtonNode
 

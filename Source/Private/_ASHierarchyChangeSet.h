@@ -9,9 +9,21 @@
 
 #import <Foundation/Foundation.h>
 #import <vector>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASObjectDescriptionHelpers.h"
+#else
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASIntegerMap.h"
+#else
 #import <AsyncDisplayKit/ASIntegerMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLog.h"
+#else
 #import <AsyncDisplayKit/ASLog.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -7,15 +7,31 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
 
 using AS::MutexLocker;
 
 #if YOGA
   #import YOGA_HEADER_PATH
-  #import <AsyncDisplayKit/ASYogaUtilities.h>
+  #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASYogaUtilities.h"
+#else
+#import <AsyncDisplayKit/ASYogaUtilities.h>
+#endif
 #endif
 
 #pragma mark - ASLayoutElementContext

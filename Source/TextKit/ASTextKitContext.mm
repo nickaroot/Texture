@@ -7,12 +7,24 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitContext.h"
+#else
 #import <AsyncDisplayKit/ASTextKitContext.h>
+#endif
 
 #if AS_ENABLE_TEXTNODE
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutManager.h"
+#else
 #import <AsyncDisplayKit/ASLayoutManager.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
 
 @implementation ASTextKitContext
 {

@@ -6,8 +6,16 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASYogaUtilities.h"
+#else
 #import <AsyncDisplayKit/ASYogaUtilities.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElementStylePrivate.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElementStylePrivate.h>
+#endif
 #if YOGA /* YOGA */
 
 @implementation ASDisplayNode (YogaHelpers)

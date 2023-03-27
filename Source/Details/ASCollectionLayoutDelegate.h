@@ -9,7 +9,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASScrollDirection.h"
+#else
 #import <AsyncDisplayKit/ASScrollDirection.h>
+#endif
 
 @class ASElementMap, ASCollectionLayoutContext, ASCollectionLayoutState;
 

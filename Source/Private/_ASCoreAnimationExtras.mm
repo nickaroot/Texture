@@ -7,8 +7,16 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCoreAnimationExtras.h"
+#else
 #import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASEqualityHelpers.h"
+#else
 #import <AsyncDisplayKit/ASEqualityHelpers.h>
+#endif
 
 void ASDisplayNodeSetupLayerContentsWithResizableImage(CALayer *layer, UIImage *image)
 {

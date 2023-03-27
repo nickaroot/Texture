@@ -11,25 +11,101 @@
 #import <XCTest/XCTest.h>
 #import <OCMock/OCMock.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayLayer.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayView.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeCornerLayerDelegate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeCornerLayerDelegate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "UIView+ASConvenience.h"
+#else
 #import <AsyncDisplayKit/UIView+ASConvenience.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode.h"
+#else
 #import <AsyncDisplayKit/ASCellNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASEditableTextNode.h"
+#else
 #import <AsyncDisplayKit/ASEditableTextNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode.h"
+#else
 #import <AsyncDisplayKit/ASImageNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASOverlayLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASOverlayLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInsetLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASInsetLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCenterLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASCenterLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBackgroundLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASBackgroundLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDKViewController.h"
+#else
 #import <AsyncDisplayKit/ASDKViewController.h>
+#endif
 
 #import "ASXCTExtensions.h"
 #import "ASDisplayNodeTestsHelper.h"

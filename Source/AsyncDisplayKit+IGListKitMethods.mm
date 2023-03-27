@@ -7,14 +7,30 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if AS_IG_LIST_KIT
 
 #import "AsyncDisplayKit+IGListKitMethods.h"
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionViewCell.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionViewCell.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionReusableView.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionReusableView.h>
+#endif
 
 
 @implementation ASIGListSectionControllerMethods

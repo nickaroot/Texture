@@ -9,7 +9,11 @@
 
 #import <Foundation/Foundation.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASContextTransitioning.h"
+#else
 #import <AsyncDisplayKit/ASContextTransitioning.h>
+#endif
 
 @class ASLayout;
 @class _ASTransitionContext;

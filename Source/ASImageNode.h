@@ -8,7 +8,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASControlNode.h"
+#else
 #import <AsyncDisplayKit/ASControlNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

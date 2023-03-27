@@ -7,10 +7,26 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBlockTypes.h"
+#else
 #import <AsyncDisplayKit/ASBlockTypes.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+LayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+LayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTraitCollection.h"
+#else
 #import <AsyncDisplayKit/ASTraitCollection.h>
+#endif
 
 @class ASLayoutSpec, _ASDisplayLayer;
 

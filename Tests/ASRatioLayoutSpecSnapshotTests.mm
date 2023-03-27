@@ -9,7 +9,11 @@
 
 #import "ASLayoutSpecSnapshotTestsHelper.h"
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRatioLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASRatioLayoutSpec.h>
+#endif
 
 static const ASSizeRange kFixedSize = {{0, 0}, {100, 100}};
 

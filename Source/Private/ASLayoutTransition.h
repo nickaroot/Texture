@@ -7,13 +7,37 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDimension.h"
+#else
 #import <AsyncDisplayKit/ASDimension.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASTransitionContext.h"
+#else
 #import <AsyncDisplayKit/_ASTransitionContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeLayout.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpec.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

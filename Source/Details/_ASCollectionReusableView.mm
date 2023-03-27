@@ -7,10 +7,22 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionReusableView.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionReusableView.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode+Internal.h"
+#else
 #import <AsyncDisplayKit/ASCellNode+Internal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionElement.h"
+#else
 #import <AsyncDisplayKit/ASCollectionElement.h>
+#endif
 
 @implementation _ASCollectionReusableView
 

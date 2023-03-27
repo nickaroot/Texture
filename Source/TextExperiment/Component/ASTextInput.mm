@@ -7,8 +7,16 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextInput.h"
+#else
 #import <AsyncDisplayKit/ASTextInput.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextUtilities.h"
+#else
 #import <AsyncDisplayKit/ASTextUtilities.h>
+#endif
 
 
 @implementation ASTextPosition

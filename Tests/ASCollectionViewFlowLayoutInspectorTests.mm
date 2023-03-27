@@ -12,11 +12,31 @@
 #import <OCMock/OCMock.h>
 #import "ASXCTExtensions.h"
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionNode.h"
+#else
 #import <AsyncDisplayKit/ASCollectionNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionViewFlowLayoutInspector.h"
+#else
 #import <AsyncDisplayKit/ASCollectionViewFlowLayoutInspector.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode.h"
+#else
 #import <AsyncDisplayKit/ASCellNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView+Undeprecated.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
+#endif
 
 @interface ASCollectionView (Private)
 

@@ -7,15 +7,47 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayView.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayView.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCoreAnimationExtras.h"
+#else
 #import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayLayer.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Convenience.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Convenience.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDKViewController.h"
+#else
 #import <AsyncDisplayKit/ASDKViewController.h>
+#endif
 
 #pragma mark - _ASDisplayView
 

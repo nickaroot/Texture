@@ -7,9 +7,17 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "NSArray+Diffing.h"
+#else
 #import <AsyncDisplayKit/NSArray+Diffing.h>
+#endif
 #import <UIKit/NSIndexPath+UIKitAdditions.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
 #import <unordered_map>
 
 @implementation NSArray (Diffing)

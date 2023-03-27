@@ -7,11 +7,27 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASMutableElementMap.h"
+#else
 #import <AsyncDisplayKit/ASMutableElementMap.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionElement.h"
+#else
 #import <AsyncDisplayKit/ASCollectionElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASElementMap.h"
+#else
 #import <AsyncDisplayKit/ASElementMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTwoDimensionalArrayUtils.h"
+#else
 #import <AsyncDisplayKit/ASTwoDimensionalArrayUtils.h>
+#endif
 
 typedef NSMutableArray<NSMutableArray<ASCollectionElement *> *> ASMutableCollectionElementTwoDimensionalArray;
 

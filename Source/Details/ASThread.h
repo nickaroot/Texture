@@ -12,13 +12,41 @@
 #import <os/lock.h>
 #import <pthread.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfigurationInternal.h"
+#else
 #import <AsyncDisplayKit/ASConfigurationInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLog.h"
+#else
 #import <AsyncDisplayKit/ASLog.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASObjectDescriptionHelpers.h"
+#else
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRecursiveUnfairLock.h"
+#else
 #import <AsyncDisplayKit/ASRecursiveUnfairLock.h>
+#endif
 
 ASDISPLAYNODE_INLINE AS_WARN_UNUSED_RESULT BOOL ASDisplayNodeThreadIsMain()
 {

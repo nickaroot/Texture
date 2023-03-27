@@ -11,7 +11,11 @@
 
 #import <Foundation/NSException.h>
 #import <pthread.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
 #if !defined(NS_BLOCK_ASSERTIONS)
   #define ASDISPLAYNODE_ASSERTIONS_ENABLED 1

@@ -9,8 +9,16 @@
 
 #import "UIResponder+AsyncDisplayKit.h"
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASResponderChainEnumerator.h"
+#else
 #import <AsyncDisplayKit/ASResponderChainEnumerator.h>
+#endif
 
 @implementation UIResponder (AsyncDisplayKit)
 

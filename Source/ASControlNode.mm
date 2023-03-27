@@ -7,16 +7,52 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASControlNode.h"
+#else
 #import <AsyncDisplayKit/ASControlNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASControlNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASControlNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode.h"
+#else
 #import <AsyncDisplayKit/ASImageNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit+Debug.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit+Debug.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASControlTargetAction.h"
+#else
 #import <AsyncDisplayKit/ASControlTargetAction.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
 #if TARGET_OS_TV
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASControlNode+Private.h"
+#else
 #import <AsyncDisplayKit/ASControlNode+Private.h>
+#endif
 #endif
 
 // UIControl allows dragging some distance outside of the control itself during

@@ -7,20 +7,68 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRangeController.h"
+#else
 #import <AsyncDisplayKit/ASRangeController.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASHierarchyChangeSet.h"
+#else
 #import <AsyncDisplayKit/_ASHierarchyChangeSet.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionElement.h"
+#else
 #import <AsyncDisplayKit/ASCollectionElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
-#import <AsyncDisplayKit/ASDisplayNodeInternal.h> // Required for interfaceState and hierarchyState setter methods.
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif // Required for interfaceState and hierarchyState setter methods.
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASElementMap.h"
+#else
 #import <AsyncDisplayKit/ASElementMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASSignpost.h"
+#else
 #import <AsyncDisplayKit/ASSignpost.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode+Internal.h"
+#else
 #import <AsyncDisplayKit/ASCellNode+Internal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit+Debug.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit+Debug.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView+Undeprecated.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
+#endif
 
 #define AS_RANGECONTROLLER_LOG_UPDATE_FREQ 0
 

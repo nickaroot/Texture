@@ -8,7 +8,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASWeakSet.h"
+#else
 #import <AsyncDisplayKit/ASWeakSet.h>
+#endif
 
 @interface ASWeakSetTests : XCTestCase
 

@@ -7,16 +7,32 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASVideoPlayerNode.h"
+#else
 #import <AsyncDisplayKit/ASVideoPlayerNode.h>
+#endif
 
 #if AS_USE_VIDEO
 #if TARGET_OS_IOS
 
 #import <AVFoundation/AVFoundation.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDefaultPlaybackButton.h"
+#else
 #import <AsyncDisplayKit/ASDefaultPlaybackButton.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
 
 static void *ASVideoPlayerNodeContext = &ASVideoPlayerNodeContext;
 

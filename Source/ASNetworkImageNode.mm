@@ -7,21 +7,69 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASNetworkImageNode.h"
+#else
 #import <AsyncDisplayKit/ASNetworkImageNode.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBasicImageDownloader.h"
+#else
 #import <AsyncDisplayKit/ASBasicImageDownloader.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASEqualityHelpers.h"
+#else
 #import <AsyncDisplayKit/ASEqualityHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode+Private.h"
+#else
 #import <AsyncDisplayKit/ASImageNode+Private.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode+AnimatedImagePrivate.h"
+#else
 #import <AsyncDisplayKit/ASImageNode+AnimatedImagePrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageContainerProtocolCategories.h"
+#else
 #import <AsyncDisplayKit/ASImageContainerProtocolCategories.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASNetworkImageLoadInfo+Private.h"
+#else
 #import <AsyncDisplayKit/ASNetworkImageLoadInfo+Private.h>
+#endif
 
 #if AS_PIN_REMOTE_IMAGE
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPINRemoteImageDownloader.h"
+#else
 #import <AsyncDisplayKit/ASPINRemoteImageDownloader.h>
+#endif
 #endif
 
 @interface ASNetworkImageNode ()

@@ -7,7 +7,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASMutableAttributedStringBuilder.h"
+#else
 #import <AsyncDisplayKit/ASMutableAttributedStringBuilder.h>
+#endif
 
 @implementation ASMutableAttributedStringBuilder {
   // Flag for the type of the current transaction (set or add)

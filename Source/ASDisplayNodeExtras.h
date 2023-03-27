@@ -10,8 +10,16 @@
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
 
 /**
  * Sets the debugName field for these nodes to the given symbol names, within the domain of "self.class"

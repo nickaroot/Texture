@@ -7,11 +7,31 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBlockTypes.h"
+#else
 #import <AsyncDisplayKit/ASBlockTypes.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRangeControllerUpdateRangeProtocol+Beta.h"
+#else
 #import <AsyncDisplayKit/ASRangeControllerUpdateRangeProtocol+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTableView.h"
+#else
 #import <AsyncDisplayKit/ASTableView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRangeManagingNode.h"
+#else
 #import <AsyncDisplayKit/ASRangeManagingNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -10,7 +10,11 @@
 /// It will be private again after exp_unfair_lock ends.
 
 #import <Foundation/Foundation.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfiguration.h"
+#else
 #import <AsyncDisplayKit/ASConfiguration.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

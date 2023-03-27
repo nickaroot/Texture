@@ -8,7 +8,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutRangeType.h"
+#else
 #import <AsyncDisplayKit/ASLayoutRangeType.h>
+#endif
 
 @protocol ASRangeControllerUpdateRangeProtocol <NSObject>
 

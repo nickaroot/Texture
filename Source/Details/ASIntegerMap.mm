@@ -7,9 +7,17 @@
 //
 
 #import "ASIntegerMap.h"
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
 #import <unordered_map>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASObjectDescriptionHelpers.h"
+#else
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
+#endif
 
 /**
  * This is just a friendly Objective-C interface to unordered_map<NSInteger, NSInteger>

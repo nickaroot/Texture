@@ -8,7 +8,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDispatch.h"
+#else
 #import <AsyncDisplayKit/ASDispatch.h>
+#endif
 
 @interface ASDispatchTests : XCTestCase
 

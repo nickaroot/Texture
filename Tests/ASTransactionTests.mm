@@ -7,7 +7,11 @@
 //
 
 #import "ASTestCase.h"
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
 
 @interface ASTransactionTests : ASTestCase
 

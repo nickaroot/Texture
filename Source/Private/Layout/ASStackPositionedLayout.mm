@@ -7,14 +7,30 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackPositionedLayout.h"
+#else
 #import <AsyncDisplayKit/ASStackPositionedLayout.h>
+#endif
 
 #import <tgmath.h>
 #import <numeric>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpecUtilities.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpecUtilities.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpec+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
+#endif
 
 static CGFloat crossOffsetForItem(const ASStackLayoutSpecItem &item,
                                   const ASStackLayoutSpecStyle &style,

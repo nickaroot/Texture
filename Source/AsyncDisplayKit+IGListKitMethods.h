@@ -7,13 +7,21 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if AS_IG_LIST_KIT
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 #import <IGListKit/IGListKit.h>
 
 NS_ASSUME_NONNULL_BEGIN

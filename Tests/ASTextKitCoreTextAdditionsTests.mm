@@ -11,7 +11,11 @@
 
 #import <XCTest/XCTest.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitCoreTextAdditions.h"
+#else
 #import <AsyncDisplayKit/ASTextKitCoreTextAdditions.h>
+#endif
 
 #if AS_ENABLE_TEXTNODE
 

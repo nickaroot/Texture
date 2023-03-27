@@ -9,7 +9,11 @@
 
 #import "ASTestCase.h"
 #import <objc/runtime.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
 #import <OCMock/OCMock.h>
 #import "OCMockObject+ASAdditions.h"
 

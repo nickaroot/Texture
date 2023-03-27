@@ -7,13 +7,21 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if AS_USE_PHOTOS
 
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -9,7 +9,11 @@
 
 #pragma once
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDimension.h"
+#else
 #import <AsyncDisplayKit/ASDimension.h>
+#endif
 
 @class ASLayout;
 

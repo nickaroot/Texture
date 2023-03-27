@@ -7,11 +7,19 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if AS_PIN_REMOTE_IMAGE
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageProtocols.h"
+#else
 #import <AsyncDisplayKit/ASImageProtocols.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

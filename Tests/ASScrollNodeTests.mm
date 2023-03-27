@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
 
 #import "ASXCTExtensions.h"
 

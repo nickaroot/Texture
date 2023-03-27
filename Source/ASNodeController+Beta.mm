@@ -7,8 +7,16 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASNodeController+Beta.h"
+#else
 #import <AsyncDisplayKit/ASNodeController+Beta.h>
+#endif
 
 #define _node (_shouldInvertStrongReference ? _weakNode : _strongNode)
 

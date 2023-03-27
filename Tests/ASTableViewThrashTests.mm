@@ -8,9 +8,21 @@
 //
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTableViewInternal.h"
+#else
 #import <AsyncDisplayKit/ASTableViewInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTableView+Undeprecated.h"
+#else
 #import <AsyncDisplayKit/ASTableView+Undeprecated.h>
+#endif
 #import <stdatomic.h>
 
 #import "ASTestCase.h"

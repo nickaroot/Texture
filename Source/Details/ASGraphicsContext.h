@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBlockTypes.h"
+#else
 #import <AsyncDisplayKit/ASBlockTypes.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTraitCollection.h"
+#else
 #import <AsyncDisplayKit/ASTraitCollection.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

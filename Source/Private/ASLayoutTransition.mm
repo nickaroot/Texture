@@ -7,17 +7,37 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutTransition.h"
+#else
 #import <AsyncDisplayKit/ASLayoutTransition.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "NSArray+Diffing.h"
+#else
 #import <AsyncDisplayKit/NSArray+Diffing.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
-#import <AsyncDisplayKit/ASDisplayNodeInternal.h> // Required for _removeFromSupernodeIfEqualTo:
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif // Required for _removeFromSupernodeIfEqualTo:
 
 #import <queue>
 
 #if AS_IG_LIST_DIFF_KIT
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout+IGListDiffKit.h"
+#else
 #import <AsyncDisplayKit/ASLayout+IGListDiffKit.h>
+#endif
 #endif
 
 using AS::MutexLocker;

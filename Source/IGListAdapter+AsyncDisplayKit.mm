@@ -7,12 +7,24 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if AS_IG_LIST_KIT
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "IGListAdapter+AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/IGListAdapter+AsyncDisplayKit.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASIGListAdapterBasedDataSource.h"
+#else
 #import <AsyncDisplayKit/ASIGListAdapterBasedDataSource.h>
+#endif
 
 @implementation IGListAdapter (AsyncDisplayKit)
 

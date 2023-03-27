@@ -7,13 +7,25 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if AS_IG_LIST_KIT
 
 #import <IGListKit/IGListKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionNode.h"
+#else
 #import <AsyncDisplayKit/ASCollectionNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

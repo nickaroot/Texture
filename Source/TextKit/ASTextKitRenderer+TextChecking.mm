@@ -7,13 +7,29 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitRenderer+TextChecking.h"
+#else
 #import <AsyncDisplayKit/ASTextKitRenderer+TextChecking.h>
+#endif
 
 #if AS_ENABLE_TEXTNODE
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitEntityAttribute.h"
+#else
 #import <AsyncDisplayKit/ASTextKitEntityAttribute.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitRenderer+Positioning.h"
+#else
 #import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitTailTruncater.h"
+#else
 #import <AsyncDisplayKit/ASTextKitTailTruncater.h>
+#endif
 
 @implementation ASTextKitTextCheckingResult
 

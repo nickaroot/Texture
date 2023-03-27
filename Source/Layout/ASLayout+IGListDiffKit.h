@@ -7,7 +7,11 @@
 //
 
 #if AS_IG_LIST_DIFF_KIT
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
 #import <IGListDiffKit/IGListDiffKit.h>
 
 @interface ASLayout(IGListDiffKit) <IGListDiffable>

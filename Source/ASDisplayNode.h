@@ -11,14 +11,46 @@
 
 #import <UIKit/UIKit.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransactionContainer.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransactionContainer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDimension.h"
+#else
 #import <AsyncDisplayKit/ASDimension.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+InterfaceState.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+InterfaceState.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAsciiArtBoxCreator.h"
+#else
 #import <AsyncDisplayKit/ASAsciiArtBoxCreator.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASObjectDescriptionHelpers.h"
+#else
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElement.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLocking.h"
+#else
 #import <AsyncDisplayKit/ASLocking.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

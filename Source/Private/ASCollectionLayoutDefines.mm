@@ -6,7 +6,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutDefines.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutDefines.h>
+#endif
 
 ASSizeRange ASSizeRangeForCollectionLayoutThatFitsViewportSize(CGSize viewportSize, ASScrollDirection scrollableDirections)
 {

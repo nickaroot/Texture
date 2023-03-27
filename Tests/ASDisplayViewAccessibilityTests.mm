@@ -12,16 +12,56 @@
 
 #import <XCTest/XCTest.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayView.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayView.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayViewAccessiblity.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayViewAccessiblity.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASButtonNode.h"
+#else
 #import <AsyncDisplayKit/ASButtonNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode.h"
+#else
 #import <AsyncDisplayKit/ASTextNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfiguration.h"
+#else
 #import <AsyncDisplayKit/ASConfiguration.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfigurationInternal.h"
+#else
 #import <AsyncDisplayKit/ASConfigurationInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASScrollNode.h"
+#else
 #import <AsyncDisplayKit/ASScrollNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDKViewController.h"
+#else
 #import <AsyncDisplayKit/ASDKViewController.h>
+#endif
 #import <OCMock/OCMock.h>
 #import "ASDisplayNodeTestsHelper.h"
 #import <WebKit/WebKit.h>

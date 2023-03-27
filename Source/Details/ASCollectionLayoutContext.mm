@@ -6,14 +6,42 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutContext.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutContext+Private.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutContext+Private.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutDelegate.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutDelegate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutCache.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutCache.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASElementMap.h"
+#else
 #import <AsyncDisplayKit/ASElementMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASEqualityHelpers.h"
+#else
 #import <AsyncDisplayKit/ASEqualityHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASHashing.h"
+#else
 #import <AsyncDisplayKit/ASHashing.h>
+#endif
 
 @implementation ASCollectionLayoutContext {
   Class<ASCollectionLayoutDelegate> _layoutDelegateClass;

@@ -10,7 +10,11 @@
 #if AS_USE_PHOTOS
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPhotosFrameworkImageRequest.h"
+#else
 #import <AsyncDisplayKit/ASPhotosFrameworkImageRequest.h>
+#endif
 
 static NSString *const kTestAssetID = @"testAssetID";
 

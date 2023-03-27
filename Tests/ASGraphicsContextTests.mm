@@ -8,10 +8,26 @@
 
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASGraphicsContext.h"
+#else
 #import <AsyncDisplayKit/ASGraphicsContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfigurationInternal.h"
+#else
 #import <AsyncDisplayKit/ASConfigurationInternal.h>
+#endif
 
 @interface ASGraphicsContextTests : XCTestCase
 @end

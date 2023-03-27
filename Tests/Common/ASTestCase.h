@@ -12,7 +12,11 @@
 // Not strictly necessary, but convenient
 #import <OCMock/OCMock.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
 
 #import "OCMockObject+ASAdditions.h"
 

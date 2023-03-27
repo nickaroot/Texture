@@ -8,10 +8,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
 #if TARGET_OS_IOS && AS_USE_MAPKIT
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode.h"
+#else
 #import <AsyncDisplayKit/ASImageNode.h>
+#endif
 #import <MapKit/MapKit.h>
 
 NS_ASSUME_NONNULL_BEGIN

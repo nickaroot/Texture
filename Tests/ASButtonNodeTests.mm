@@ -8,9 +8,21 @@
 
 #import <XCTest/XCTest.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASButtonNode.h"
+#else
 #import <AsyncDisplayKit/ASButtonNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode.h"
+#else
 #import <AsyncDisplayKit/ASTextNode.h>
+#endif
 
 @interface ASButtonNodeTests : XCTestCase
 @end

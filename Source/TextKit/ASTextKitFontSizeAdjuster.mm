@@ -8,15 +8,31 @@
 //
 
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitFontSizeAdjuster.h"
+#else
 #import <AsyncDisplayKit/ASTextKitFontSizeAdjuster.h>
+#endif
 
 #if AS_ENABLE_TEXTNODE
 
 #import <tgmath.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutManager.h"
+#else
 #import <AsyncDisplayKit/ASLayoutManager.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitContext.h"
+#else
 #import <AsyncDisplayKit/ASTextKitContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
 
 //#define LOG(...) NSLog(__VA_ARGS__)
 #define LOG(...)

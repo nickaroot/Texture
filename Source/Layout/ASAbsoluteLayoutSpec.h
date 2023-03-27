@@ -7,7 +7,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpec.h>
+#endif
 
 /** How much space the spec will take up. */
 typedef NS_ENUM(NSInteger, ASAbsoluteLayoutSpecSizing) {

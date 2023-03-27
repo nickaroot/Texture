@@ -7,9 +7,17 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpec+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpec+Subclasses.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutSpecPrivate.h"
+#else
 #import <AsyncDisplayKit/ASLayoutSpecPrivate.h>
+#endif
 
 #pragma mark - ASNullLayoutSpec
 

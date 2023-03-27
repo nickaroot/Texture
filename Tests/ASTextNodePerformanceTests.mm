@@ -8,10 +8,26 @@
 
 #import <XCTest/XCTest.h>
 #import "ASPerformanceTestContext.h"
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode.h"
+#else
 #import <AsyncDisplayKit/ASTextNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "CoreGraphics+ASConvenience.h"
+#else
 #import <AsyncDisplayKit/CoreGraphics+ASConvenience.h>
+#endif
 
 #import "ASXCTExtensions.h"
 

@@ -6,7 +6,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextRunDelegate.h"
+#else
 #import <AsyncDisplayKit/ASTextRunDelegate.h>
+#endif
 
 static void DeallocCallback(void *ref) {
   ASTextRunDelegate *self = (__bridge_transfer ASTextRunDelegate *)(ref);

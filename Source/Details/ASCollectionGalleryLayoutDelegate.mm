@@ -6,20 +6,72 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionGalleryLayoutDelegate.h"
+#else
 #import <AsyncDisplayKit/ASCollectionGalleryLayoutDelegate.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionGalleryLayoutInfo.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionGalleryLayoutInfo.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASCollectionGalleryLayoutItem.h"
+#else
 #import <AsyncDisplayKit/_ASCollectionGalleryLayoutItem.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode.h"
+#else
 #import <AsyncDisplayKit/ASCellNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionElement.h"
+#else
 #import <AsyncDisplayKit/ASCollectionElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollections.h"
+#else
 #import <AsyncDisplayKit/ASCollections.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutContext.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutDefines.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutState.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutState.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASElementMap.h"
+#else
 #import <AsyncDisplayKit/ASElementMap.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayout.h"
+#else
 #import <AsyncDisplayKit/ASLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInsetLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASInsetLayoutSpec.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpec.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpec.h>
+#endif
 
 #pragma mark - ASCollectionGalleryLayoutDelegate
 

@@ -7,9 +7,21 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBatchFetching.h"
+#else
 #import <AsyncDisplayKit/ASBatchFetching.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBatchContext.h"
+#else
 #import <AsyncDisplayKit/ASBatchContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBatchFetchingDelegate.h"
+#else
 #import <AsyncDisplayKit/ASBatchFetchingDelegate.h>
+#endif
 
 BOOL ASDisplayShouldFetchBatchForScrollView(UIScrollView<ASBatchFetchingScrollView> *scrollView,
                                             ASScrollDirection scrollDirection,

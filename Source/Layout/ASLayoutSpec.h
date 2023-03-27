@@ -7,10 +7,26 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElement.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAsciiArtBoxCreator.h"
+#else
 #import <AsyncDisplayKit/ASAsciiArtBoxCreator.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLocking.h"
+#else
 #import <AsyncDisplayKit/ASLocking.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASObjectDescriptionHelpers.h"
+#else
 #import <AsyncDisplayKit/ASObjectDescriptionHelpers.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

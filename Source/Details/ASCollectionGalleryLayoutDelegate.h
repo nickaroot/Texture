@@ -6,8 +6,16 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionLayoutDelegate.h"
+#else
 #import <AsyncDisplayKit/ASCollectionLayoutDelegate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASScrollDirection.h"
+#else
 #import <AsyncDisplayKit/ASScrollDirection.h>
+#endif
 
 @class ASElementMap;
 @class ASCollectionGalleryLayoutDelegate;

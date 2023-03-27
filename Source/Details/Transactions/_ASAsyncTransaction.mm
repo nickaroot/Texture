@@ -8,10 +8,26 @@
 //
 
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransaction.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransaction.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransactionGroup.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransactionGroup.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
 #import <list>
 #import <map>
 

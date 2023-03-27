@@ -6,8 +6,16 @@
 //  Copyright © 2020 Pinterest. All rights reserved.
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode.h"
+#else
 #import <AsyncDisplayKit/ASImageNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "UIImage+ASConvenience.h"
+#else
 #import <AsyncDisplayKit/UIImage+ASConvenience.h>
+#endif
 #import "ASSnapshotTestCase.h"
 
 @interface UIImage_ASConvenienceTests : ASSnapshotTestCase

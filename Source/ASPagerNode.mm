@@ -7,17 +7,57 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPagerNode.h"
+#else
 #import <AsyncDisplayKit/ASPagerNode.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionGalleryLayoutDelegate.h"
+#else
 #import <AsyncDisplayKit/ASCollectionGalleryLayoutDelegate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASCollectionNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDelegateProxy.h"
+#else
 #import <AsyncDisplayKit/ASDelegateProxy.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPagerFlowLayout.h"
+#else
 #import <AsyncDisplayKit/ASPagerFlowLayout.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCellNode.h"
+#else
 #import <AsyncDisplayKit/ASCellNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "UIResponder+AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/UIResponder+AsyncDisplayKit.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView+Undeprecated.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
+#endif
 
 @interface ASPagerNode () <ASCollectionDataSource, ASCollectionDelegate, ASCollectionDelegateFlowLayout, ASDelegateProxyInterceptor, ASCollectionGalleryLayoutPropertiesProviding>
 {

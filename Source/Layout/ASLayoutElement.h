@@ -7,14 +7,46 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElementPrivate.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElementPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElementExtensibility.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElementExtensibility.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDimensionInternal.h"
+#else
 #import <AsyncDisplayKit/ASDimensionInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutElement.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAbsoluteLayoutElement.h"
+#else
 #import <AsyncDisplayKit/ASAbsoluteLayoutElement.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTraitCollection.h"
+#else
 #import <AsyncDisplayKit/ASTraitCollection.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAsciiArtBoxCreator.h"
+#else
 #import <AsyncDisplayKit/ASAsciiArtBoxCreator.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLocking.h"
+#else
 #import <AsyncDisplayKit/ASLocking.h>
+#endif
 
 @class ASLayout;
 @class ASLayoutSpec;

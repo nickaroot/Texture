@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <pthread/sched.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

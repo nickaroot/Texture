@@ -9,7 +9,11 @@
 
 #import <UIKit/UIKit.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode.h"
+#else
 #import <AsyncDisplayKit/ASTextNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

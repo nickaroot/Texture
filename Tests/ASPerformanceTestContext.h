@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <XCTest/XCTestAssertionsImpl.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
 #define ASXCTAssertRelativePerformanceInRange(test, caseName, min, max) \
   _XCTPrimitiveAssertLessThanOrEqual(self, test.results[caseName].relativePerformance, @#caseName, max, @#max);\

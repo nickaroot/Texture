@@ -7,13 +7,33 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTipsWindow.h"
+#else
 #import <AsyncDisplayKit/ASTipsWindow.h>
+#endif
 #if AS_ENABLE_TIPS
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeTipState.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeTipState.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTipNode.h"
+#else
 #import <AsyncDisplayKit/ASTipNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTip.h"
+#else
 #import <AsyncDisplayKit/ASTip.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit+Tips.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit+Tips.h>
+#endif
 
 @interface ASTipsWindow ()
 @property (nonatomic, readonly) ASDisplayNode *node;

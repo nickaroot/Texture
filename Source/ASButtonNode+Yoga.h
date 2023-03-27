@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASButtonNode.h"
+#else
 #import <AsyncDisplayKit/ASButtonNode.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

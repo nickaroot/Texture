@@ -7,31 +7,91 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode.h"
+#else
 #import <AsyncDisplayKit/ASTextNode.h>
+#endif
 
 #if AS_ENABLE_TEXTNODE
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode2.h"
+#else
 #import <AsyncDisplayKit/ASTextNode2.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASTextNode+Beta.h>
+#endif
 
 #import <mutex>
 #import <tgmath.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASDisplayLayer.h"
+#else
 #import <AsyncDisplayKit/_ASDisplayLayer.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASGraphicsContext.h"
+#else
 #import <AsyncDisplayKit/ASGraphicsContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASHighlightOverlayLayer.h"
+#else
 #import <AsyncDisplayKit/ASHighlightOverlayLayer.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitCoreTextAdditions.h"
+#else
 #import <AsyncDisplayKit/ASTextKitCoreTextAdditions.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitRenderer+Positioning.h"
+#else
 #import <AsyncDisplayKit/ASTextKitRenderer+Positioning.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitShadower.h"
+#else
 #import <AsyncDisplayKit/ASTextKitShadower.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "CoreGraphics+ASConvenience.h"
+#else
 #import <AsyncDisplayKit/CoreGraphics+ASConvenience.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASHashing.h"
+#else
 #import <AsyncDisplayKit/ASHashing.h>
+#endif
 
 /**
  * If set, we will record all values set to attributedText into an array

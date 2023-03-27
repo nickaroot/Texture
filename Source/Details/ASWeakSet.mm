@@ -7,7 +7,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASWeakSet.h"
+#else
 #import <AsyncDisplayKit/ASWeakSet.h>
+#endif
 
 @interface ASWeakSet<__covariant ObjectType> ()
 @property (nonatomic, readonly) NSHashTable<ObjectType> *hashTable;

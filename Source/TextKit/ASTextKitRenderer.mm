@@ -7,16 +7,40 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitRenderer.h"
+#else
 #import <AsyncDisplayKit/ASTextKitRenderer.h>
+#endif
 
 #if AS_ENABLE_TEXTNODE
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitContext.h"
+#else
 #import <AsyncDisplayKit/ASTextKitContext.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitShadower.h"
+#else
 #import <AsyncDisplayKit/ASTextKitShadower.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitTailTruncater.h"
+#else
 #import <AsyncDisplayKit/ASTextKitTailTruncater.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextKitFontSizeAdjuster.h"
+#else
 #import <AsyncDisplayKit/ASTextKitFontSizeAdjuster.h>
+#endif
 
 //#define LOG(...) NSLog(__VA_ARGS__)
 #define LOG(...)

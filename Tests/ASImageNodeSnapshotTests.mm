@@ -9,7 +9,11 @@
 
 #import "ASSnapshotTestCase.h"
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
 
 #if AS_AT_LEAST_IOS13
 static UIImage* makeImageWithColor(UIColor *color, CGSize size) {

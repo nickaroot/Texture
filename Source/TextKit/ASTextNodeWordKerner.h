@@ -10,7 +10,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/NSLayoutManager.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 

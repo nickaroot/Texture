@@ -7,7 +7,11 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASImageNode+CGExtras.h"
+#else
 #import <AsyncDisplayKit/ASImageNode+CGExtras.h>
+#endif
 
 // TODO rewrite these to be closer to the intended use -- take UIViewContentMode as param, CGRect destinationBounds, CGSize sourceSize.
 static CGSize _ASSizeFillWithAspectRatio(CGFloat aspectRatio, CGSize constraints);

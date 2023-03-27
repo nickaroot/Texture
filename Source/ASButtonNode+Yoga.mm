@@ -6,11 +6,27 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 #import "ASButtonNode+Yoga.h"
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASButtonNode+Private.h"
+#else
 #import <AsyncDisplayKit/ASButtonNode+Private.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASStackLayoutSpecUtilities.h"
+#else
 #import <AsyncDisplayKit/ASStackLayoutSpecUtilities.h>
+#endif
 
 #if YOGA
 static void ASButtonNodeResolveHorizontalAlignmentForStyle(ASLayoutElementStyle *style, ASStackLayoutDirection _direction, ASHorizontalAlignment _horizontalAlignment, ASStackLayoutJustifyContent _justifyContent, ASStackLayoutAlignItems _alignItems) {

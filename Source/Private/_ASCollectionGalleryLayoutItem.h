@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutElement.h"
+#else
 #import <AsyncDisplayKit/ASLayoutElement.h>
+#endif
 
 @class ASCollectionElement;
 

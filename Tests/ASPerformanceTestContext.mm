@@ -9,7 +9,11 @@
 
 #import "ASPerformanceTestContext.h"
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/CABase.h>

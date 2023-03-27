@@ -7,8 +7,16 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
-#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h> // for ASInterfaceState protocol
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif // for ASInterfaceState protocol
 
 /* ASNodeController is currently beta and open to change in the future */
 @interface ASNodeController<__covariant DisplayNodeType : ASDisplayNode *>

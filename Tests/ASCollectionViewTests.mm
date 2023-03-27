@@ -8,14 +8,38 @@
 //
 
 #import <XCTest/XCTest.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "AsyncDisplayKit.h"
+#else
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionViewFlowLayoutInspector.h"
+#else
 #import <AsyncDisplayKit/ASCollectionViewFlowLayoutInspector.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDataController.h"
+#else
 #import <AsyncDisplayKit/ASDataController.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASSectionContext.h"
+#else
 #import <AsyncDisplayKit/ASSectionContext.h>
+#endif
 #import <vector>
 #import <OCMock/OCMock.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASCollectionView+Undeprecated.h"
+#else
 #import <AsyncDisplayKit/ASCollectionView+Undeprecated.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
 
 #import "ASDisplayNodeTestsHelper.h"
 #import "ASTestCase.h"

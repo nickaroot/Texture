@@ -8,7 +8,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBaseDefines.h"
+#else
 #import <AsyncDisplayKit/ASBaseDefines.h>
+#endif
 
 /**
  @abstract Decides how to scale and crop an image to fit in the provided size, while not wasting memory by upscaling images

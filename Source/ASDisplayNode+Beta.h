@@ -7,14 +7,34 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLayoutRangeType.h"
+#else
 #import <AsyncDisplayKit/ASLayoutRangeType.h>
+#endif
 
 #if YOGA
   #import YOGA_HEADER_PATH
-  #import <AsyncDisplayKit/ASYogaUtilities.h>
-  #import <AsyncDisplayKit/ASDisplayNode+Yoga.h>
+  #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASYogaUtilities.h"
+#else
+#import <AsyncDisplayKit/ASYogaUtilities.h>
+#endif
+  #if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Yoga.h"
+#else
+#import <AsyncDisplayKit/ASDisplayNode+Yoga.h>
+#endif
 #endif
 
 NS_ASSUME_NONNULL_BEGIN

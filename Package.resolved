@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "IGListKit",
+        "repositoryURL": "https://github.com/nickaroot/IGListKit",
+        "state": {
+          "branch": "main",
+          "revision": "501cccc6f03247b48d080dd010487e4614135792",
+          "version": null
+        }
+      },
+      {
         "package": "libwebp",
         "repositoryURL": "https://github.com/SDWebImage/libwebp-Xcode",
         "state": {

@@ -7,8 +7,16 @@
 //
 
 #import "ASConfigurationInternal.h"
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASConfigurationDelegate.h"
+#else
 #import <AsyncDisplayKit/ASConfigurationDelegate.h>
+#endif
 #import <stdatomic.h>
 
 static ASConfigurationManager *ASSharedConfigurationManager;

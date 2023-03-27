@@ -6,10 +6,26 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "NSAttributedString+ASText.h"
+#else
 #import <AsyncDisplayKit/NSAttributedString+ASText.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "NSParagraphStyle+ASText.h"
+#else
 #import <AsyncDisplayKit/NSParagraphStyle+ASText.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextRunDelegate.h"
+#else
 #import <AsyncDisplayKit/ASTextRunDelegate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextUtilities.h"
+#else
 #import <AsyncDisplayKit/ASTextUtilities.h>
+#endif
 #import <CoreFoundation/CoreFoundation.h>
 
 

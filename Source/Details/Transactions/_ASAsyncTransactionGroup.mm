@@ -7,11 +7,27 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAssert.h"
+#else
 #import <AsyncDisplayKit/ASAssert.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransaction.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransaction.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransactionGroup.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransactionGroup.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "_ASAsyncTransactionContainer.h"
+#else
 #import <AsyncDisplayKit/_ASAsyncTransactionContainer.h>
+#endif
 
 @implementation _ASAsyncTransactionGroup {
   NSHashTable<id<ASAsyncTransactionContainer>> *_containers;

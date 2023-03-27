@@ -10,9 +10,21 @@
 
 #import <XCTest/XCTest.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode2.h"
+#else
 #import <AsyncDisplayKit/ASTextNode2.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASTextNode+Beta.h>
+#endif
 
 #import "ASTestCase.h"
 

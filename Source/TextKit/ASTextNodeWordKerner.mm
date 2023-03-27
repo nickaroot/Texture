@@ -7,11 +7,19 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNodeWordKerner.h"
+#else
 #import <AsyncDisplayKit/ASTextNodeWordKerner.h>
+#endif
 
 #import <UIKit/UIKit.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNodeTypes.h"
+#else
 #import <AsyncDisplayKit/ASTextNodeTypes.h>
+#endif
 
 @implementation ASTextNodeWordKerner
 

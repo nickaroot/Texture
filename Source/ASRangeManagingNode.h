@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTraitCollection.h"
+#else
 #import <AsyncDisplayKit/ASTraitCollection.h>
+#endif
 
 @class ASCellNode;
 

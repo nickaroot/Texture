@@ -7,10 +7,26 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPendingStateController.h"
+#else
 #import <AsyncDisplayKit/ASPendingStateController.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASWeakSet.h"
+#else
 #import <AsyncDisplayKit/ASWeakSet.h>
-#import <AsyncDisplayKit/ASDisplayNodeInternal.h> // Required for -applyPendingViewState; consider moving this to +FrameworkPrivate
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeInternal.h"
+#else
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#endif // Required for -applyPendingViewState; consider moving this to +FrameworkPrivate
 
 @interface ASPendingStateController()
 {

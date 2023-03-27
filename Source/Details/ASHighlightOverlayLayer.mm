@@ -7,12 +7,20 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASHighlightOverlayLayer.h"
+#else
 #import <AsyncDisplayKit/ASHighlightOverlayLayer.h>
+#endif
 
 #import <UIKit/UIKit.h>
 #import <tgmath.h>
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
 
 static const CGFloat kCornerRadius = 2.5;
 static const UIEdgeInsets padding = {2, 4, 1.5, 4};

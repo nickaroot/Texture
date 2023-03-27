@@ -7,28 +7,72 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASMultiplexImageNode.h"
+#else
 #import <AsyncDisplayKit/ASMultiplexImageNode.h>
+#endif
 
 #if TARGET_OS_IOS && AS_USE_ASSETS_LIBRARY
 #import <AssetsLibrary/AssetsLibrary.h>
 #endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNodeExtras.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Subclasses.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+FrameworkPrivate.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASEqualityHelpers.h"
+#else
 #import <AsyncDisplayKit/ASEqualityHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASInternalHelpers.h"
+#else
 #import <AsyncDisplayKit/ASInternalHelpers.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASLog.h"
+#else
 #import <AsyncDisplayKit/ASLog.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASThread.h"
+#else
 #import <AsyncDisplayKit/ASThread.h>
+#endif
 
 #if AS_USE_PHOTOS
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPhotosFrameworkImageRequest.h"
+#else
 #import <AsyncDisplayKit/ASPhotosFrameworkImageRequest.h>
+#endif
 #endif
 
 #if AS_PIN_REMOTE_IMAGE
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASPINRemoteImageDownloader.h"
+#else
 #import <AsyncDisplayKit/ASPINRemoteImageDownloader.h>
+#endif
+#else
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASBasicImageDownloader.h"
 #else
 #import <AsyncDisplayKit/ASBasicImageDownloader.h>
+#endif
 #endif
 
 using AS::MutexLocker;

@@ -7,16 +7,36 @@
 //  Licensed under Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
 //
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASAvailability.h"
+#else
 #import <AsyncDisplayKit/ASAvailability.h>
+#endif
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASControlNode.h"
+#else
 #import <AsyncDisplayKit/ASControlNode.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASDisplayNode+Beta.h"
+#else
 #import <AsyncDisplayKit/ASDisplayNode+Beta.h>
+#endif
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNodeCommon.h"
+#else
 #import <AsyncDisplayKit/ASTextNodeCommon.h>
+#endif
 
 #if (!AS_ENABLE_TEXTNODE)
 
 // Pull in ASTextNode2 to replace ASTextNode with ASTextNode2
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASTextNode2.h"
+#else
 #import <AsyncDisplayKit/ASTextNode2.h>
+#endif
 
 #else
 

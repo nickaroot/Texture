@@ -8,7 +8,11 @@
 
 #import "ASTestCase.h"
 
+#if !__has_include(<AsyncDisplayKit/AsyncDisplayKit.h>)
+#import "ASRunLoopQueue.h"
+#else
 #import <AsyncDisplayKit/ASRunLoopQueue.h>
+#endif
 
 #import "ASDisplayNodeTestsHelper.h"
 
