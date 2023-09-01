@@ -581,9 +581,11 @@ ASSynthesizeLockingMethodsWithMutex(__instanceLock__);
     }
       
     // CAEAGLLayer
+    #if !TARGET_OS_MACCATALYST
     if([[view.layer class] isSubclassOfClass:[CAEAGLLayer class]]){
       _flags.canClearContentsOfLayer = NO;
     }
+    #endif
   }
 
   return view;
