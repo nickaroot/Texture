@@ -97,7 +97,7 @@ static inline PINRemoteImageManagerPriority PINRemoteImageManagerPriorityWithASI
     }
 #endif
 #if PIN_APNG_AVAILABLE
-    else if ([data pin_isAPNG) {
+    else if ([data pin_isAPNG]) {
         return YES;
     }
 #endif
