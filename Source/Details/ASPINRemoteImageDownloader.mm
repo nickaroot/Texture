@@ -41,6 +41,12 @@
 #define PIN_ANIMATED_AVAILABLE 0
 #endif
 
+#if __has_include (<PINRemoteImage/PINAPNGAnimatedImage.h>) || __has_include ("PINAPNGAnimatedImage.h")
+#define PIN_APNG_AVAILABLE 1
+#else
+#define PIN_APNG_AVAILABLE 0
+#endif
+
 #if __has_include(<webp/decode.h>) || __has_include("webp/decode.h")
 #define PIN_WEBP_AVAILABLE  1
 #else
@@ -87,6 +93,11 @@ static inline PINRemoteImageManagerPriority PINRemoteImageManagerPriorityWithASI
     }
 #if PIN_WEBP_AVAILABLE
     else if ([data pin_isAnimatedWebP]) {
+        return YES;
+    }
+#endif
+#if PIN_APNG_AVAILABLE
+    else if ([data pin_isAPNG) {
         return YES;
     }
 #endif
@@ -385,6 +396,11 @@ static dispatch_once_t shared_init_predicate;
   }
 #if PIN_WEBP_AVAILABLE
   else if ([data pin_isAnimatedWebP]) {
+      return data;
+  }
+#endif
+#if PIN_APNG_AVAILABLE
+  else if ([data pin_isAPNG]) {
       return data;
   }
 #endif
