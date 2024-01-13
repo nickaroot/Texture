@@ -8,9 +8,6 @@ let sharedDefines: [CSetting] = [
     // PINRemoteImage always available for Texture
     .define("AS_PIN_REMOTE_IMAGE", to: "1"),
     
-    // PINRemoteImage APNG support
-    .define("PIN_APNG", to: "1"),
-    
     // Enable ASVideoNode
     .define("AS_USE_VIDEO", to: "1"),
     
