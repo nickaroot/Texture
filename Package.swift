@@ -58,6 +58,9 @@ let package = Package(
             ],
             path: "spm/Sources/AsyncDisplayKit",
             cSettings: sharedDefines + IGListKit(enabled: true, diffOnly: true),
+            swiftSettings: [
+                .unsafeFlags(["-Xcc", "-Wno-incomplete-umbrella"]),
+            ],
             linkerSettings: [
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreMedia"),
@@ -72,6 +75,9 @@ let package = Package(
             ],
             path: "spm/Sources/AsyncDisplayKitIGListKit",
             cSettings: sharedDefines + IGListKit(enabled: true, diffOnly: false),
+            swiftSettings: [
+                .unsafeFlags(["-Xcc", "-Wno-incomplete-umbrella"]),
+            ],
             linkerSettings: [
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreMedia"),
