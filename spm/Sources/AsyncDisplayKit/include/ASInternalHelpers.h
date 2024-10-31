@@ -1,1 +1,1 @@
-../../../../Source/Private/ASInternalHelpers.h
+../../../../Source/ASInternalHelpers.h
