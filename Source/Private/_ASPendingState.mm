@@ -993,10 +993,8 @@ static CGColorRef blackColorRef = NULL;
   if (flags.setCornerRadius)
     layer.cornerRadius = cornerRadius;
 
-  if (AS_AVAILABLE_IOS_TVOS(11, 11)) {
-    if (flags.setMaskedCorners) {
-      layer.maskedCorners = maskedCorners;
-    }
+  if (flags.setMaskedCorners) {
+    layer.maskedCorners = maskedCorners;
   }
 
   if (flags.setContentMode)
@@ -1190,10 +1188,8 @@ static CGColorRef blackColorRef = NULL;
   if (flags.setPreservesSuperviewLayoutMargins)
     view.preservesSuperviewLayoutMargins = _flags.preservesSuperviewLayoutMargins;
 
-  if (AS_AVAILABLE_IOS_TVOS(11.0, 11.0)) {
-    if (flags.setInsetsLayoutMarginsFromSafeArea) {
-      view.insetsLayoutMarginsFromSafeArea = _flags.insetsLayoutMarginsFromSafeArea;
-    }
+  if (flags.setInsetsLayoutMarginsFromSafeArea) {
+    view.insetsLayoutMarginsFromSafeArea = _flags.insetsLayoutMarginsFromSafeArea;
   }
 
   if (flags.setSemanticContentAttribute) {
@@ -1212,16 +1208,14 @@ static CGColorRef blackColorRef = NULL;
   if (flags.setAccessibilityValue)
     view.accessibilityValue = accessibilityValue;
 
-  if (AS_AVAILABLE_IOS_TVOS(11, 11)) {
-    if (flags.setAccessibilityAttributedLabel) {
-      view.accessibilityAttributedLabel = accessibilityAttributedLabel;
-    }
-    if (flags.setAccessibilityAttributedHint) {
-      view.accessibilityAttributedHint = accessibilityAttributedHint;
-    }
-    if (flags.setAccessibilityAttributedValue) {
-      view.accessibilityAttributedValue = accessibilityAttributedValue;
-    }
+  if (flags.setAccessibilityAttributedLabel) {
+    view.accessibilityAttributedLabel = accessibilityAttributedLabel;
+  }
+  if (flags.setAccessibilityAttributedHint) {
+    view.accessibilityAttributedHint = accessibilityAttributedHint;
+  }
+  if (flags.setAccessibilityAttributedValue) {
+    view.accessibilityAttributedValue = accessibilityAttributedValue;
   }
 
   if (flags.setAccessibilityTraits)
@@ -1368,18 +1362,14 @@ static CGColorRef blackColorRef = NULL;
   pendingState.semanticContentAttribute = view.semanticContentAttribute;
   pendingState.layoutMargins = view.layoutMargins;
   pendingState.preservesSuperviewLayoutMargins = view.preservesSuperviewLayoutMargins;
-  if (AS_AVAILABLE_IOS_TVOS(11, 11)) {
-    pendingState.insetsLayoutMarginsFromSafeArea = view.insetsLayoutMarginsFromSafeArea;
-  }
+  pendingState.insetsLayoutMarginsFromSafeArea = view.insetsLayoutMarginsFromSafeArea;
   pendingState.isAccessibilityElement = view.isAccessibilityElement;
   pendingState.accessibilityLabel = view.accessibilityLabel;
   pendingState.accessibilityHint = view.accessibilityHint;
   pendingState.accessibilityValue = view.accessibilityValue;
-  if (AS_AVAILABLE_IOS_TVOS(11, 11)) {
-    pendingState.accessibilityAttributedLabel = view.accessibilityAttributedLabel;
-    pendingState.accessibilityAttributedHint = view.accessibilityAttributedHint;
-    pendingState.accessibilityAttributedValue = view.accessibilityAttributedValue;
-  }
+  pendingState.accessibilityAttributedLabel = view.accessibilityAttributedLabel;
+  pendingState.accessibilityAttributedHint = view.accessibilityAttributedHint;
+  pendingState.accessibilityAttributedValue = view.accessibilityAttributedValue;
   pendingState.accessibilityTraits = view.accessibilityTraits;
   pendingState.accessibilityFrame = view.accessibilityFrame;
   pendingState.accessibilityLanguage = view.accessibilityLanguage;
